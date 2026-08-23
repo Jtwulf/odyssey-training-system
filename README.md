@@ -1,97 +1,196 @@
 # Odyssey Training System
 
-Odyssey Running の毎週火曜 Quality Session を、科学的エビデンス、参加者の走力差、会場制約、レースマイルストーンを踏まえて月単位で設計するための Knowledge Base です。
+Odyssey Running の **毎週火曜 Quality Session を設計・運用するための知識ベース**です。
 
-## Scope
+このリポジトリに、毎月の実際のトレーニングメニューを保存するわけではありません。
+ここで管理するのは、**「なぜその練習を行うのか」「どう設計・判断するのか」**という、今後も繰り返し使うルールと根拠です。
 
-- 毎週火曜 20:00–21:00 の Quality Session / Point Workout
-- 通常 5–10 名程度の幅広い走力の参加者
-- 主会場: Yoyogi Park / Meiji Jingu Gaien
-- カレンダー月単位でのセッション設計
-- Evidence と Coaching Logic の明文化
-- Google Sheets PLAN の安定した運用・表示ルール
+> **GitHub = WHY / HOW**  
+> **Google Sheets = WHAT / WHEN**  
+> **Strava = 参加者への告知**
 
-## Non-scope
+---
 
-- 個人の週間走行距離・疲労・故障・睡眠の継続管理
-- 個人コーチングや週間トレーニングプラン
-- 全参加者の Strava / Intervals.icu 同期
-- 月間 Workout Plan の GitHub 保存
-- Draft / Review / Approved / Locked 等の workflow 管理
+## このリポジトリの役割
 
-## Source of Truth
+Odyssey の火曜練習を考えるときには、単に「今月は 400m × 10」のようにメニューを並べるだけではなく、次のような判断が必要です。
 
-- **GitHub = WHY / HOW** — Evidence + Coaching Logic + persistent PLAN operating rules
-- **Google Sheets = WHAT / WHEN** — 実際の月間 Workout Plan
-- **Strava = Announcement** — 一般参加者への最終告知
+- 次のレースや時期に対して、何を鍛えるべきか
+- Threshold、VO2max系、Speed、Hill などをどう使い分けるか
+- 走力差のある参加者に、どう同じ目的の刺激を与えるか
+- 距離ベースと時間ベースのどちらを使うか
+- レストをどの程度にするか
+- 暑さ、会場、60分という制約をどう考慮するか
+- Google Sheets の PLAN にどう表現するか
 
-GitHub は Knowledge Base のみを保持し、月間PLANを Google Sheets と二重管理しません。
+このリポジトリは、こうした判断を **科学的エビデンス → Odyssey向けの判断ルール → 実際のPLAN** へつなぐためにあります。
 
-継続的に適用すべきルールやユーザーからの修正は、チャット履歴やアシスタントの記憶だけに依存せず、GitHub の該当ルールファイルへ永続化します。Google Sheets `SYSTEM` は運用上のクイックリファレンスですが、永続ルールの正本は GitHub です。
+```text
+Scientific Evidence
+        ↓
+Odyssey Coaching Logic
+        ↓
+Workout / PLAN operating rules
+        ↓
+Google Sheets PLAN
+        ↓
+Strava announcement
+```
 
-## Repository structure
+---
+
+## どこに何があるか
+
+ファイル名は参照しやすいよう英語のままですが、役割は以下の4つに分かれています。
 
 ```text
 README.md
-
-knowledge/
-  evidence.md
-  coaching-system.md
-  plan-operations.md
-
-  evidence/
-    methods.md
-    references.md
-    intensity-domains.md
-    training-distribution-periodization.md
-    threshold-aerobic-power.md
-    interval-programming-recovery.md
-    speed-economy-hills-warmup.md
-    race-demands.md
-    durability-marathon.md
-    taper-environment.md
+│
+└── knowledge/
+    ├── evidence.md              # ① 科学的根拠を探すための入口
+    ├── coaching-system.md       # ② 根拠をOdysseyの練習設計へ変換するルール
+    ├── plan-operations.md       # ③ Google Sheets PLANの作成・運用ルール
+    │
+    └── evidence/                # ④ テーマ別の詳細な科学的根拠
+        ├── methods.md
+        ├── references.md
+        ├── intensity-domains.md
+        ├── training-distribution-periodization.md
+        ├── threshold-aerobic-power.md
+        ├── interval-programming-recovery.md
+        ├── speed-economy-hills-warmup.md
+        ├── race-demands.md
+        ├── durability-marathon.md
+        └── taper-environment.md
 ```
 
-### File roles
+### ① `knowledge/evidence.md` — まずここを見る
 
-- `knowledge/evidence.md` — 軽量なEvidence索引、主要原則、テーマ別routing
-- `knowledge/evidence/methods.md` — Evidence strength / Directness / Claim schema / Population metadata
-- `knowledge/evidence/references.md` — 検証済み参考文献とSource IDの正本
-- `knowledge/evidence/*.md` — Claim ID単位の詳細Evidence
-- `knowledge/coaching-system.md` — EvidenceをOdysseyの設計判断へ翻訳する正本
-- `knowledge/plan-operations.md` — PLANの書き方・時間/距離選択・表示・変更・ルール永続化
+**科学的エビデンスの目次・案内役**です。
 
-## Evidence design
+すべての論文情報を読むためのファイルではなく、今回考えているWorkoutやレースに対して、`knowledge/evidence/` のどのファイルを読めばよいかを判断するために使います。
 
-詳細Evidenceは、単なる論文要約ではなく原則として以下を区別します。
+例:
+
+- 1 km向けの練習を考える → intensity / aerobic power / interval / speed / race demands
+- Marathon向けの練習を考える → periodization / threshold / durability / race demands
+- Hillや短いSpeedを考える → speed / hills / interval programming
+
+---
+
+### ② `knowledge/coaching-system.md` — Odysseyとしてどう判断するか
+
+**科学的な知見を、Odyssey Running の火曜練習へ変換するための中心ルール**です。
+
+研究で分かっていることと、Odyssey固有の判断を混同しないよう、主に次の3種類を区別しています。
+
+- **Evidence-based** — 研究による直接的な裏付けがあるもの
+- **Inference** — 研究をOdysseyの条件へ合理的に応用したもの
+- **Coaching judgment** — 会場・人数・60分枠などを踏まえた運用上の判断
+
+実際のWorkoutを設計するときは、このファイルが **「Odysseyではどうするか」** の基準になります。
+
+---
+
+### ③ `knowledge/plan-operations.md` — PLANをどう作るか
+
+**Google Sheets の `PLAN` をどう書き、どう維持するかの運用ルール**です。
+
+例えば以下を管理します。
+
+- 時間ベース / 距離ベースをどう選ぶか
+- `Main Workout` / `Workout Details` / `Training Effect` の書き方
+- Group A / B / C の扱い
+- Recovery の記載方法
+- 既に告知したWorkoutをどう扱うか
+- PLANを更新した後に何を確認するか
+- 今後も使うルール変更をどこへ保存するか
+
+つまり、`coaching-system.md` が **練習設計の判断ルール**、`plan-operations.md` が **その判断をPLANへ落とし込むルール**です。
+
+---
+
+### ④ `knowledge/evidence/` — 科学的根拠の詳細
+
+ここには、テーマごとの詳細なエビデンスを保存しています。
+
+| File | 日本語でいうと | 主な内容 |
+|---|---|---|
+| `methods.md` | エビデンスの評価方法 | Evidence strength、OdysseyへのDirectness、Claimの書式 |
+| `references.md` | 参考文献台帳 | 検証済み論文・Source ID |
+| `intensity-domains.md` | 運動強度の考え方 | Moderate / Heavy / Severe、LT / VT / CS / MAV など |
+| `training-distribution-periodization.md` | トレーニング配分と期分け | TID、Progression、Specificity |
+| `threshold-aerobic-power.md` | Threshold・有酸素パワー | Tempo、Cruise Interval、VO2系Interval |
+| `interval-programming-recovery.md` | IntervalとRecoveryの組み方 | Rep時間・距離、総量、Rest、Mixed abilityへの対応 |
+| `speed-economy-hills-warmup.md` | Speed・Economy・Hill | Sprint、Running Economy、Hill、Warm-up |
+| `race-demands.md` | レース別要求 | 1 km、3–5 km、10 km、Half、Marathon |
+| `durability-marathon.md` | MarathonとDurability | 長時間走行での能力低下、Marathonとの関係 |
+| `taper-environment.md` | Taperと環境 | レース前調整、暑熱、環境による負荷調整 |
+
+これらは「この論文ではこうだった」という論文要約集ではなく、**Odysseyの判断に使えるClaim単位の知識ベース**として整理されています。
+
+通常の月次PLAN作成で、毎回すべてを読む必要はありません。`knowledge/evidence.md` を入口に、必要なテーマだけ参照します。
+
+---
+
+## 実際に月間PLANを作るときの流れ
+
+基本的には次の順番で使います。
 
 ```text
-Supported claim
-Training target
-Expected transfer
-Acute evidence
-Chronic adaptation evidence
-Performance evidence
-Programming variables
-Population / context
-Evidence strength
-Directness to Odyssey
-Limitations
-What this does not prove
-Sources
+1. 次のレース / milestone を確認
+        ↓
+2. knowledge/evidence.md で必要なEvidenceを特定
+        ↓
+3. 必要な knowledge/evidence/*.md だけ確認
+        ↓
+4. coaching-system.md に従ってOdyssey向けWorkoutへ変換
+        ↓
+5. plan-operations.md に従ってGoogle Sheets PLANへ記載
+        ↓
+6. PLANを再確認
+        ↓
+7. 確定した内容をStrava等で参加者へ告知
 ```
 
-月次PLAN設計では全Evidenceを毎回読み込まず、`knowledge/evidence.md`からマイルストーンとWorkout familyに必要なtopic fileだけを参照します。
+重要なのは、**GitHubの内容をそのまま参加者へ見せることではなく、GitHubを判断の裏側として使うこと**です。
 
-## Planning chain
+---
 
-```text
-Evidence
-→ Training target / Expected transfer
-→ Odyssey-specific inference
-→ Exact coaching prescription
-→ Participant-facing Training Effect
-→ Google Sheets PLAN
-```
+## GitHub / Google Sheets / Strava の分担
 
-必要性が明確になるまで、plans / state / reviews / automation 等は追加しません。
+| 場所 | 役割 | 保存するもの |
+|---|---|---|
+| **GitHub** | WHY / HOW | 科学的根拠、Coaching Logic、今後も使う運用ルール |
+| **Google Sheets `PLAN`** | WHAT / WHEN | 実際の日付、会場、Workout、Group別設定、Training Effect |
+| **Strava** | Announcement | 参加者向けに確定した練習内容 |
+
+**月間Workout PlanそのものはGitHubへコピーしません。**
+Google Sheets とGitHubで同じPLANを二重管理すると、どちらが最新か分からなくなるためです。
+
+また、今後も適用したいルール変更や修正は、チャット履歴やAIの記憶だけに残さず、対応するGitHubファイルへ保存します。
+
+---
+
+## このシステムが扱う範囲
+
+### 扱うもの
+
+- 毎週火曜 20:00–21:00 の Quality Session / Point Workout
+- 通常5–10名程度の、走力差があるグループ
+- 主に Yoyogi Park / Meiji Jingu Gaien での実施
+- 月単位のWorkout設計
+- レースやmilestoneを意識したProgression
+- Evidenceに基づくWorkout設計
+- Google Sheets `PLAN` の運用
+
+### 扱わないもの
+
+- 各参加者の週間走行距離の管理
+- 睡眠、疲労、故障などの継続モニタリング
+- 個人別の週間トレーニングプラン
+- 全参加者のStrava / Intervals.icuデータ管理
+- 月間PLANのGitHubへの保存
+- Draft / Review / Approved などの複雑なworkflow管理
+
+Odyssey Training System は、**火曜の1セッションを高品質に設計すること**に責任範囲を限定します。
