@@ -2,13 +2,15 @@
 
 Last updated: 2026-08-23
 
-This file translates `evidence.md` into operating rules for Odyssey Running's Tuesday Quality Session.
+This file translates the routed Evidence Base into operating rules for Odyssey Running's Tuesday Quality Session.
 
-Every meaningful rule should be read with one of three labels:
+Every meaningful rule uses one of three labels:
 
 - **[Evidence-based]** — directly supported by reasonably applicable research.
 - **[Inference]** — a reasonable translation of research into Odyssey's constraints, but not directly tested in this exact setting.
-- **[Coaching judgment]** — an operational choice required to run the session; it must not be presented as something uniquely proven by research.
+- **[Coaching judgment]** — an operational choice required to run the session; it must not be presented as uniquely proven by research.
+
+Detailed evidence starts at `knowledge/evidence.md`. Google Sheets formatting and maintenance rules live in `knowledge/plan-operations.md`.
 
 ---
 
@@ -18,21 +20,21 @@ Every meaningful rule should be read with one of three labels:
 
 - **[Coaching judgment]** Odyssey manages the Tuesday **20:00–21:00 Quality Session / Point Workout**.
 - **[Coaching judgment]** Typical attendance is **5–10 runners** with a wide ability range.
-- **[Coaching judgment]** Planning is presented in **calendar-month units**, while the underlying training logic remains milestone- and progression-aware.
+- **[Coaching judgment]** Planning is displayed in **calendar-month units**, while training logic remains milestone- and progression-aware.
 - **[Coaching judgment]** Primary venues through the current cycle are **Yoyogi Park** and **Meiji Jingu Gaien**.
 
 ### Non-scope
 
 - **[Coaching judgment]** Do not manage each participant's weekly mileage, sleep, fatigue, injury history, Strava history, or individual weekly plan.
-- **[Coaching judgment]** Do not import Justin's personal JTBC training state, injury history, or personal race targets into Odyssey decisions.
-- **[Inference]** Whole-program concepts such as polarized/pyramidal TID are background constraints, not Tuesday-only targets, because Odyssey controls only one session per week.
+- **[Coaching judgment]** Do not import Justin's personal JTBC training state or personal race targets.
+- **[Inference]** Whole-program concepts such as polarized/pyramidal TID are context, not Tuesday-only targets, because Odyssey controls one session per week.
 
 ### Source of Truth
 
 ```text
 GitHub
 = WHY / HOW
-= Evidence + Coaching Logic
+= Evidence + Coaching Logic + persistent PLAN operating rules
 
 Google Sheets
 = WHAT / WHEN
@@ -42,60 +44,106 @@ Strava
 = public participant announcement
 ```
 
-- **[Coaching judgment]** Never duplicate the monthly Workout Plan into GitHub.
-- **[Coaching judgment]** Do not add Draft / Review / Approved / Locked workflow states unless a future operational problem clearly requires them.
+- **[Coaching judgment]** Never duplicate monthly PLAN rows into GitHub.
+- **[Coaching judgment]** Future-facing corrections must be persisted in the relevant GitHub rule/evidence file rather than left only in chat memory.
 
 ---
 
-## 2. Core design principles
+## 2. Evidence retrieval protocol
 
-1. **[Evidence-based]** Quality training should not be reduced to one repeated intensity. Threshold, aerobic-power/VO2, speed-oriented, hill and race-specific stimuli can all have roles across a training cycle.
-2. **[Inference]** The goal is not for every runner to cover the same distance. The goal is for runners to receive a **comparable training stimulus appropriate to the session objective**.
-3. **[Evidence-based]** Interval prescription has multiple interacting variables and the literature does not establish one universally optimal combination of work duration, intensity and recovery.
-4. **[Coaching judgment]** Therefore exact rep counts, recovery lengths and pace bands are chosen to satisfy the current objective, milestone, venue and 60-minute operating window.
-5. **[Evidence-based]** Specificity should increase as an important event approaches, while total load is reduced near competition rather than simply making every week harder.
-6. **[Coaching judgment]** Progression does **not** mean “harder every Tuesday.” It can mean more specificity, better pace control, a different stimulus, reduced recovery, increased quality volume, or deliberate unloading/sharpening.
-7. **[Coaching judgment]** Easy/social running is not the main Tuesday workout. Easy running remains part of warm-up, recovery and cooldown.
+Before designing or materially revising a month:
+
+1. read `knowledge/evidence.md`;
+2. identify the next milestone and proposed workout families;
+3. read only the routed topic files needed for that problem;
+4. separate supported claim, Odyssey inference, and exact coaching prescription;
+5. read `plan-operations.md` before editing the Sheet;
+6. re-read affected GitHub files and PLAN cells after writing.
+
+### Typical routing
+
+#### 1 km / middle-distance
+
+- `evidence/intensity-domains.md`
+- `evidence/threshold-aerobic-power.md`
+- `evidence/interval-programming-recovery.md`
+- `evidence/speed-economy-hills-warmup.md`
+- 1-km sections of `evidence/race-demands.md`
+- `evidence/taper-environment.md`
+
+#### Marathon-oriented
+
+- `evidence/training-distribution-periodization.md`
+- `evidence/intensity-domains.md`
+- `evidence/threshold-aerobic-power.md`
+- `evidence/durability-marathon.md`
+- marathon section of `evidence/race-demands.md`
+- `evidence/taper-environment.md`
+
+Do not load `references.md` unless verifying or changing a claim.
 
 ---
 
-## 3. Monthly planning method
+## 3. Core design principles
+
+1. **[Evidence-based]** Quality training should not be reduced to one intensity. Threshold, aerobic power, speed, hills, and race-specific stimuli can all have roles.
+2. **[Inference]** The objective is not equal distance or pace; it is a **comparable session-purpose stimulus** appropriate to each group.
+3. **[Evidence-based]** Interval response depends on intensity, work duration/distance, cumulative work, recovery, environment, and training status. No universal optimal combination exists.
+4. **[Coaching judgment]** Exact reps, rest, pace bands, and groups are chosen for the milestone, venue, 60-minute window, and available field data.
+5. **[Evidence-based]** Acute response, chronic adaptation, and race performance are separate evidence layers.
+6. **[Evidence-based]** Specificity generally increases toward an important event; taper evidence supports lower volume with some retained intensity.
+7. **[Coaching judgment]** Progression does not mean harder every Tuesday. It may mean more specificity, better control, different stimulus, deliberate unloading, or lower fatigue cost.
+8. **[Evidence-based]** Heat/environment change relative strain at a fixed pace.
+9. **[Coaching judgment]** Easy/social running is not the main Tuesday workout; easy running is used for warm-up, recovery, and cooldown.
+
+---
+
+## 4. Monthly planning method
 
 For each calendar month, design all Tuesdays together before announcement.
 
 ### Step A — identify milestones
 
-- **[Coaching judgment]** List races/events that materially affect multiple members.
-- Current milestones:
-  - **2026-09-19 — DESCENTE 1 km Time Trial**
-  - **2026-11-01 — Seoul Marathon**
+Current milestones:
+
+- **2026-09-19 — DESCENTE 1 km Time Trial**
+- **2026-11-01 — Seoul Marathon**
 
 ### Step B — define the month-level training problem
 
-- **[Inference]** Decide which qualities need emphasis based on the next milestone while maintaining enough variation that the month is useful to non-participants too.
-- Examples of qualities: threshold durability, aerobic power, speed endurance, short-speed/neuromuscular quality, hills, race-specific rhythm.
+- **[Inference]** Decide which qualities need emphasis based on the next milestone while retaining value for non-participants.
+- Candidate qualities: threshold speed, aerobic power, speed endurance, short speed, hills, race rhythm, sustained tempo, durability-oriented work.
 
-### Step C — assign a purpose to each Tuesday
+### Step C — assign one primary purpose to each Tuesday
 
-- **[Coaching judgment]** Every session must have one primary `Focus` that can be explained in one short phrase.
-- **[Coaching judgment]** Do not choose a workout first and invent the purpose afterward.
+- **[Coaching judgment]** Each session has one primary `Focus`.
+- **[Coaching judgment]** Choose the purpose before the workout format; do not choose a familiar workout and invent a reason afterward.
 
-### Step D — check progression and fatigue
+### Step D — select the work unit and dose
 
-- **[Evidence-based]** Training emphasis should progress toward event-specific work as competition approaches; pre-race taper evidence favors reducing load while retaining some intensity.
-- **[Inference]** A session only four days before an important 1 km TT should generally emphasize sharpening/readiness and avoid large residual fatigue rather than trying to create a new fitness adaptation at the last moment.
-- **[Coaching judgment]** The exact low-volume sharpening session remains a coaching prescription, not a directly proven four-day formula.
+Explicitly answer:
 
-### Step E — check the 60-minute constraint
+- Why time or distance?
+- What is the expected rep duration for every group?
+- What cumulative quality volume does every group receive?
+- What must recovery accomplish?
 
-- **[Coaching judgment]** The full session—warm-up, preparation, main work, recovery and cooldown—must fit inside 20:00–21:00 with realistic transitions.
-- **[Coaching judgment]** If a mathematically elegant workout does not fit operationally, it is not an Odyssey workout.
+### Step E — check sequence and fatigue
+
+- **[Evidence-based]** Increase event relevance as appropriate and reduce load near competition.
+- **[Inference]** Four days before a 1-km TT, prioritize readiness and movement quality over a large training load.
+- **[Coaching judgment]** Exact low-volume sharpening remains a coaching prescription.
+
+### Step F — check scope and 60 minutes
+
+- **[Coaching judgment]** The entire session, including transitions, must fit 20:00–21:00.
+- **[Coaching judgment]** Do not assume the participants' other six training days.
 
 ---
 
-## 4. Standard 60-minute session architecture
+## 5. Standard 60-minute architecture
 
-### Default architecture
+### Default
 
 ```text
 20:00–20:10/12  Easy running
@@ -106,179 +154,196 @@ For each calendar month, design all Tuesdays together before announcement.
 20:58–21:00  Finish / regroup
 ```
 
-### Why this structure exists
+### Evidence boundary
 
-- **[Evidence-based]** Warm-up generally improves subsequent physical performance.
-- **[Evidence-based]** Prolonged static stretching immediately before speed/explosive work has no demonstrated advantage and can impair explosive performance in some contexts.
-- **[Inference]** Easy running followed by dynamic preparation and, on faster days, progressive strides provides a practical progression from low intensity toward workout speed.
-- **[Coaching judgment]** The exact minute split above is chosen to fit Odyssey's 60-minute window; research does not prove that 10–12 minutes plus 6 minutes of drills is uniquely optimal.
+- **[Evidence-based]** Warming up generally improves subsequent performance.
+- **[Evidence-based]** Dynamic preparation often supports sprint/jump readiness; prolonged static-only stretching can impair explosive performance in some contexts.
+- **[Evidence-based]** Running-economy evidence does not show a clear acute benefit or harm from any stretching type overall; certainty is low.
+- **[Inference]** Easy running → dynamic preparation → progressive strides is a practical speed progression for faster sessions.
+- **[Coaching judgment]** Exact minutes, drills, and stride count are not uniquely proven.
 
-### Warm-up by workout type
+### Workout-specific preparation
 
-#### Threshold / controlled tempo day
+#### Threshold / controlled tempo
 
-- **[Coaching judgment]** 10–12 min easy running.
-- **[Coaching judgment]** Short dynamic preparation focused on range of motion and readiness.
-- **[Coaching judgment]** 0–3 progressive strides depending on weather, venue and starting pace.
-- **[Inference]** Avoid spending excessive time on maximal-speed preparation when the main session does not require it.
+- 10–12 min easy running;
+- short dynamic preparation;
+- 0–3 progressive strides depending on conditions and starting pace.
 
-#### VO2 / 1 km / speed-endurance day
+#### Aerobic power / 1 km / speed endurance
 
-- **[Coaching judgment]** 10–12 min easy running.
-- **[Coaching judgment]** Dynamic preparation.
-- **[Inference]** Add 2–4 progressive strides or short controlled accelerations so the first hard repetition is not the first exposure to faster running.
+- 10–12 min easy running;
+- dynamic preparation;
+- 2–4 progressive strides/controlled accelerations.
 
-#### Hill / short-speed day
+#### Hills / short speed
 
-- **[Coaching judgment]** 10–12 min easy running plus dynamic preparation.
-- **[Inference]** Include progressive accelerations before maximal or near-maximal hill/speed work because of the higher neuromuscular demand.
+- 10–12 min easy running;
+- dynamic preparation;
+- progressive accelerations before near-maximal work.
 
 ### Cooldown
 
-- **[Coaching judgment]** Default 7–10 min easy running where logistics allow.
-- **[Coaching judgment]** Cooldown is not allowed to make the main set exceed the one-hour session window; preserve the agreed finish time.
+- Default 7–10 min easy where logistics allow.
+- Preserve the one-hour finish; cooldown does not justify overrunning.
 
 ---
 
-## 5. Workout families and when to use them
+## 6. Intensity translation
 
-### Threshold / tempo / cruise intervals
+### Common language
 
-- **[Evidence-based]** Threshold-zone work is a common and useful component of distance-running training, but threshold-dominant total training is not established as superior.
-- **[Inference]** Use continuous tempo when a stable sustained rhythm is the main goal and the venue can support uninterrupted running.
-- **[Inference]** Use cruise intervals when brief recovery improves pace control, group management or quality volume without changing the session into a VO2 workout.
-- **[Coaching judgment]** Formats such as 20 min continuous, 3 × 8 min, or 2 km repetitions are options—not scientific constants.
+- **Moderate / below first threshold:** easy/conversational.
+- **Heavy:** controlled sustained work between first threshold and CS, depending on the marker used.
+- **CS / heavy-severe boundary:** useful field concept, not mandatory testing for every participant.
+- **Severe:** above CS; commonly relevant to aerobic-power and shorter-race work.
+- **MAV/vVO2max:** test-specific speed associated with maximal oxygen uptake, not interchangeable with CS or race pace.
+- **Extreme/sprint:** very short maximal demand; distinct from relaxed strides or controlled speed endurance.
 
-### Aerobic power / VO2 intervals
+### Rules
 
-- **[Evidence-based]** Work intervals of roughly ≥2 min are effective for accumulating time at high oxygen uptake; longer intervals often accumulate more time near VO2max than very short repetitions.
-- **[Inference]** For a mixed group, 3–5 min work bouts are often a useful design space because they can create a meaningful aerobic-power stimulus without requiring identical distances.
-- **[Coaching judgment]** Do not prescribe a fixed pace from marathon target alone. Use recent relevant performance and the target physiological/competitive demand.
-
-### 1 km / middle-distance-specific work
-
-- **[Evidence-based]** 800–1500 m performance depends on both substantial aerobic and anaerobic contributions.
-- **[Inference]** A 1 km TT therefore benefits from a combination of aerobic power, speed, speed endurance and race-specific rhythm rather than repeated all-out 1 km efforts every week.
-- **[Coaching judgment]** Use exact 1 km repetitions only when they solve a specific training or venue problem; they are not automatically the best way to train for a 1 km race.
-
-### Short speed / neuromuscular stimulus
-
-- **[Evidence-based]** Sprint-oriented training can improve speed and anaerobic qualities; strength/plyometric work can improve running economy over multi-week programs.
-- **[Inference]** Small doses of high-quality fast running can complement aerobic training, especially before a short race, but should be kept distinct from exhausting sprint-interval work.
-- **[Coaching judgment]** Short fast reps should stop before mechanics visibly deteriorate when the session purpose is speed quality rather than fatigue tolerance.
-
-### Speed endurance
-
-- **[Evidence-based]** Sprint/HIIT literature supports training both aerobic and anaerobic performance qualities, but the exact best dose for distance runners is uncertain.
-- **[Inference]** Use speed-endurance sessions when the goal is to sustain speed above longer-distance race rhythm under controlled accumulating fatigue.
-- **[Coaching judgment]** Do not equate “speed endurance” with maximal sprinting or make it a weekly default.
-
-### Hills
-
-- **[Evidence-based]** Uphill intervals can create meaningful aerobic and neuromuscular overload; no single hill protocol is proven optimal.
-- **[Coaching judgment]** Hills are an occasional tool, not a mandatory recurring weekly category.
-- **[Coaching judgment]** Yoyogi's ~100 m hill can be used for short hill work when the monthly objective calls for it.
-
-### Marathon-oriented controlled intervals
-
-- **[Evidence-based]** World-class and recreational marathon evidence supports the importance of large low-intensity volume and increasing race-specific work closer to competition, but Odyssey cannot manage those total-program variables.
-- **[Inference]** After the 1 km milestone, Tuesday sessions can gradually include longer controlled intervals / sustained work with greater marathon relevance while remaining useful to non-marathoners.
-- **[Coaching judgment]** Do not turn every Tuesday into marathon-pace running simply because Seoul Marathon is approaching.
+- **[Evidence-based]** LT, VT, CS, HRV thresholds, and race paces are related but not numerically interchangeable.
+- **[Coaching judgment]** Use pace ranges plus effort/execution cues rather than false precision.
+- **[Coaching judgment]** In heat, fatigue, wind, hills, or congestion, preserve the relative session purpose rather than nominal pace.
 
 ---
 
-## 6. Pace-group system
+## 7. Pace-group system
 
 ### Group identity
 
-- **[Coaching judgment]** Group A / B / C / D are **Workout Target Groups**, not permanent runner rankings.
-- **[Coaching judgment]** A runner can be A on threshold day and B on short-interval day.
-- **[Coaching judgment]** Sex is not used to assign groups; current performance for the relevant workout is.
-- **[Coaching judgment]** Use 2, 3 or 4 groups depending on attendance and ability distribution. Do not create empty complexity merely to preserve a fixed number of groups.
+- **[Coaching judgment]** A/B/C/D are **Workout Target Groups**, not permanent runner rankings.
+- **[Coaching judgment]** A runner may be A on threshold day and B on short-speed day.
+- **[Coaching judgment]** Sex is not a grouping criterion; current relevant performance is.
+- **[Coaching judgment]** Use 2–4 groups depending on attendance and distribution.
 
 ### Pace-setting hierarchy
 
-Use the most relevant information available in this order:
+1. recent performance in the same/similar workout;
+2. recent race performance close to the session demand;
+3. stable threshold/aerobic-power training history;
+4. broader race target only when more specific data are unavailable;
+5. conservative first-rep calibration when uncertainty remains.
 
-1. **[Inference]** recent performance in the same or similar workout/race distance;
-2. **[Inference]** recent race performance close to the session demand;
-3. **[Inference]** stable threshold/aerobic-power training history;
-4. **[Coaching judgment]** broader race targets (including marathon target) only when more specific information is unavailable;
-5. **[Coaching judgment]** conservative first-rep calibration when uncertainty remains.
+### Display
 
-### Pace display
-
-- **[Coaching judgment]** PLAN should normally show **pace ranges**, e.g. `3:40–3:45/km`, not false precision such as a single second per kilometer.
-- **[Coaching judgment]** For time-based short work, speed may instead be expressed by a practical split/range or effort cue if pace-per-km becomes misleading.
+- Normally show pace ranges, not a single second per kilometer.
+- For distance reps, show practical rep split plus pace where helpful.
+- For short work, effort/rhythm may be more honest than km pace.
 
 ### Initial field calibration — not a permanent pace table
 
-These are observed Odyssey settings and must only be used as starting context:
+- 2-km repetitions, 2-min rest: fastest ~3:40–3:50/km; next ~4:10/km; slower ~5:00/km.
+- 1-km repetitions: fastest ~3:30/km; next ~3:40–3:50/km; next ~4:20–4:30/km.
 
-- 2 km repetitions, 2 min rest: fastest ~3:40–3:50/km; next ~4:10/km; slower ~5:00/km.
-- 1 km repetitions: fastest ~3:30/km; next ~3:40–3:50/km; next ~4:20–4:30/km.
-
-- **[Coaching judgment]** Recalibrate from actual attendance and recent workout performance rather than preserving these values indefinitely.
+Recalibrate from actual performance.
 
 ---
 
-## 7. Distance-based vs time-based intervals
+## 8. Workout design matrix
 
-### Primary rule
+Exact values are coaching judgments. The matrix identifies the primary target and the variables that should dominate the decision.
 
-- **[Inference]** When the objective depends mainly on spending a comparable duration at a target intensity, prefer **time-based work bouts** if fixed distances would create very different work durations between groups.
-- **[Coaching judgment]** Example design space: `N × 4 min`, with group-specific speeds and a common time-based recovery.
-
-### When distance-based work is preferred
-
-- **[Inference]** Use distance-based repetitions when race specificity is important, when fixed landmarks simplify execution, or when the venue naturally supports a clean rep structure.
-- **[Coaching judgment]** Distance-based work is acceptable even when groups finish at different times if the resulting physiological difference is intended or operationally acceptable.
-
-### Important caveat
-
-- **[Evidence-based]** Interval duration changes the physiological response; research does not support treating a 3:30 rep and a 5:00 rep as identical merely because both are “1 km.”
-- **[Inference]** Therefore distance equality is not stimulus equality in a heterogeneous group.
-
----
-
-## 8. Recovery design
-
-### General rule
-
-- **[Evidence-based]** Active recovery is not universally superior to passive recovery. Both can support interval-training adaptations, and acute runner data show similar time near VO2max under some active/passive comparisons.
-- **[Coaching judgment]** Choose recovery mode and duration according to what the next repetition is supposed to look like.
-
-### Practical logic
-
-- **[Inference]** For aerobic-power intervals, recovery should be long enough to preserve the intended work quality but not so long that the session repeatedly returns to a fully reset state when cumulative aerobic strain is the goal.
-- **[Inference]** For short-speed work, longer/passive recovery can be appropriate when maintaining mechanics and speed is more important than metabolic density.
-- **[Inference]** For threshold/cruise work, short easy-jog recovery can preserve continuity while permitting pace control.
-- **[Coaching judgment]** Exact recovery values remain session-specific and must fit the 60-minute window.
+| Workout family | Primary target | Expected transfer | Work-unit tendency | Recovery objective | Main fatigue risk | Evidence route |
+|---|---|---|---|---|---|---|
+| Continuous tempo | uninterrupted controlled high aerobic output | sustained pace/rhythm | usually time or route distance | none | drifting above target and fading | THR-001/002 |
+| Cruise intervals | controlled threshold-oriented quality volume | sustainable speed and pace control | time or distance | short continuity-preserving recovery | becoming severe-domain intervals | THR-001/002, REC-002 |
+| Aerobic power | sustained severe-domain high oxygen-uptake work | VO2max/MAV support and faster-pace reserve | often multi-minute time; distance when duration remains appropriate | preserve work quality with incomplete/appropriate recovery | chasing maximal pace or excess volume | AP-001–004 |
+| 1-km race rhythm | distance-specific rhythm and split judgement | specificity and pacing | often distance-based | enough recovery for target rhythm | turning into repeated all-out trials | RACE-1K-001/002, IP-003 |
+| Speed endurance | maintain fast running under controlled accumulating fatigue | sustain speed late in short race | time or meaningful distance | balance quality and fatigue accumulation | mechanics collapse / excessive anaerobic load | SPD-001, RACE-1K-001 |
+| Short speed | fast mechanics and speed reserve | movement quality and speed access | short distance/time | generous recovery | confusing with exhausting SIT | SPD-001, NM-001 |
+| Hills — long | aerobic + muscular overload | high aerobic demand and force-oriented running | usually time/distance by hill | preserve repeatability; account for downhill | calf/Achilles/muscular load | HILL-001 |
+| Hills — short | acceleration/force/power | neuromuscular/power stimulus | short distance | walk/jog-back or generous recovery | maximal work without preparation | HILL-001, NM-001 |
+| Marathon-oriented controlled | sustainable speed and fatigue resistance | threshold/durability support | longer time/distance | short recovery or continuous | assuming Tuesday replaces long-run/volume | DUR-001–004, MAR-001/002 |
+| Sharpening | readiness and fast rhythm with low fatigue | race-day movement familiarity | short race-relevant distance/time | generous recovery | trying to create fitness days before race | TAP-001/002 |
 
 ---
 
-## 9. Venue logic
+## 9. Time-based versus distance-based work
+
+There is no default unit.
+
+### Prefer time-based when
+
+- comparable work duration at target intensity is central;
+- a fixed distance would create materially different duration and distort the stimulus;
+- the target is primarily threshold duration or aerobic-power exposure;
+- common start/stop improves group execution.
+
+### Prefer distance-based when
+
+- race/segment specificity and split judgement matter;
+- the venue has reliable landmarks;
+- exact distance improves participant understanding;
+- differing work duration is acceptable for the target.
+
+### Rules
+
+- Work and recovery units are independent.
+- Do not force a 50/50 mix.
+- Before finalizing, answer: **why this unit for this purpose?**
+
+---
+
+## 10. Recovery design
+
+- **[Evidence-based]** Active recovery is not universally superior to passive recovery.
+- **[Coaching judgment]** Select recovery according to the desired next repetition.
+
+### Practical inference
+
+- Threshold/cruise: short easy jog often preserves continuity.
+- Aerobic power: enough recovery to preserve multi-minute work quality without unintended full reset when cumulative aerobic strain is desired.
+- Speed endurance: sufficient recovery to control speed decay and mechanics.
+- Short speed: longer/passive/walk-back can preserve velocity and technique.
+- Sharpening: generous walk-jog/passive recovery protects low fatigue.
+
+Exact durations must fit the 60-minute window.
+
+---
+
+## 11. Durability and marathon logic
+
+- **[Evidence-based]** Durability is resistance to physiological/performance deterioration during/after prolonged exercise and is associated with marathon performance.
+- **[Evidence-based]** Direct evidence identifying the best durability intervention is incomplete.
+- **[Inference]** Sustained tempo, longer controlled intervals, whole-program volume/long runs, and race-specific work may contribute, but Odyssey controls only Tuesday.
+- **[Coaching judgment]** Do not label every long/hard workout “durability.” The primary target must be maintaining quality under controlled sustained fatigue.
+- **[Coaching judgment]** After the 1-km milestone, increase sustained/threshold/marathon relevance selectively without eliminating aerobic-power, hill, or speed tools.
+
+---
+
+## 12. Environment and venue logic
+
+### Heat/environment
+
+- **[Evidence-based]** Heat/humidity increase strain and can reduce sustainable running performance.
+- **[Inference]** Pace, groups, recovery, and group-specific volume may need adjustment to preserve the target.
+- **[Coaching judgment]** No fixed seconds-per-kilometer heat penalty.
+
+Adjustment hierarchy:
+
+1. reduce target pace / use effort cue;
+2. widen pace range or change group assignment;
+3. modestly extend recovery when repeat quality is primary;
+4. shorten one group or final reps;
+5. adjust warm-up/water/shade;
+6. structurally change/cancel only for safety/logistics.
 
 ### Yoyogi Park
 
 Available characteristics:
 
-- ~1 km usable section
-- ~2 km loop
-- ~100 m hill usable for hill repetitions
+- ~1-km usable section;
+- ~2-km loop;
+- ~100-m hill.
 
-Rules:
-
-- **[Coaching judgment]** Do not maintain a detailed GPS-course database unless an actual operational need appears.
-- **[Coaching judgment]** Select the section/loop based on the workout being designed.
+Select the section based on purpose; do not build a detailed GPS database without need.
 
 ### Meiji Jingu Gaien
 
-Representative loop:
+Representative loop: **~1.325 km**.
 
-- **~1.325 km**
-
-Known operational format:
+Known format:
 
 ```text
 1 km hard
@@ -286,219 +351,175 @@ Known operational format:
 = one loop
 ```
 
-- **[Coaching judgment]** This format is operationally simple and can be used when that advantage matters.
-- **[Evidence-based]** Work duration and recovery duration influence interval stimulus.
-- **[Inference]** Because faster and slower groups take different times for both the 1 km work and ~325 m jog, this loop format does not produce identical physiological dosing across groups.
-- **[Coaching judgment]** If comparable recovery duration is important, use a time-based recovery or alter start/re-group logistics rather than assuming the remaining loop automatically solves recovery prescription.
+Operationally simple, but faster/slower groups receive different work and recovery durations. Use time-based recovery or alternative regrouping when comparable duration matters.
 
 ---
 
-## 10. Announcement stability
+## 13. Announcement stability
 
-Once a calendar month's plan has been announced publicly:
+Once a calendar month's plan has been announced:
 
-- **[Coaching judgment]** Preserve the **Main Workout structure** unless there is a real safety/logistical reason to change it.
-- **[Coaching judgment]** Allowed day-of adjustments include:
-  - pace ranges;
-  - number of groups;
-  - group assignment;
-  - heat/environment adjustment;
-  - modest recovery adjustment;
-  - shortening reps for an individual group.
-- **[Coaching judgment]** Avoid changing a published `1 km × 5` into an unrelated `400 m × 12` simply because another workout seems more attractive that week.
+- preserve the Main Workout structure unless safety/logistics or an explicitly approved coaching reason requires change;
+- allowable adjustments include pace, number of groups, assignment, heat response, modest recovery change, and shortening one group;
+- avoid changing an announced `1 km × 5` into an unrelated `400 m × 12` casually.
 
-This is an operational commitment rule, not a scientific claim.
+This is an operational commitment, not a scientific claim.
 
 ---
 
-## 11. Current milestone logic
+## 14. Current milestone logic
 
 ### 2026-09-19 DESCENTE 1 km Time Trial
 
-- **[Evidence-based]** 800–1500 m performance is mixed aerobic/anaerobic; aerobic-power interval evidence favors meaningful multi-minute work for accumulating high oxygen uptake; sprint-oriented work can train speed/anaerobic qualities.
-- **[Inference]** The 9/1, 9/8 and 9/15 progression should therefore develop complementary qualities rather than repeat all-out 1 km trials.
-- **[Evidence-based]** Taper evidence supports reducing load while retaining some intensity before competition.
-- **[Inference]** 9/15, four days before the TT, should avoid large residual fatigue and function as sharpening/readiness rather than a maximal training-load day.
-- **[Coaching judgment]** Exact workout choices belong only in the Google Sheet PLAN after the evidence base is consulted.
+- **[Evidence-based]** Approximately 1 km has substantial aerobic and anaerobic demand.
+- **[Inference]** Preparation should combine threshold support, aerobic power, distance/rhythm-specific speed endurance, and low-volume sharpening rather than repeated all-out 1-km trials.
+- **[Evidence-based]** Taper principle: lower load with retained intensity.
+- **[Inference]** 9/15 should preserve rhythm/readiness with low residual fatigue.
+- **[Coaching judgment]** Exact sessions remain in Google Sheets.
 
 ### 2026-11-01 Seoul Marathon
 
-- **[Evidence-based]** Marathon training practice/evidence supports more race-specific work as the main event approaches while maintaining varied training within a largely low-intensity whole program.
-- **[Inference]** After the 1 km TT, Odyssey can shift some Tuesday emphasis toward longer controlled work, threshold durability and marathon-relevant rhythm.
-- **[Coaching judgment]** Sessions must remain broadly valuable to runners not racing Seoul, and Odyssey does not attempt to provide their complete marathon plan.
+- **[Evidence-based]** Marathon performance depends on whole-program volume, sustainable speed/economy, long-run/race-specific exposure, and durability.
+- **[Inference]** After 9/19, Tuesday can shift toward longer controlled work and sustained quality.
+- **[Coaching judgment]** Sessions remain useful to non-Seoul runners; Odyssey does not provide the complete marathon program.
 
 ---
 
-## 12. Historical Odyssey sessions — field calibration only
+## 15. Historical Odyssey sessions — field calibration only
 
-These sessions are recorded as operational history, **not** as evidence that the formats were optimal.
+Historical sessions are operational context, not proof of optimality.
 
 ### 2026-06-09 — Intervals.icu `i155686940`
 
-- Odyssey session.
-- Oda Field.
-- `800 m × 6`.
+- Oda Field; `800 m × 6`.
 - Fast side approximately 3:10/km by user report.
-- **[Coaching judgment]** User report takes priority over unreliable automatic split interpretation for the workout structure.
+- User report takes priority over unreliable automatic split interpretation.
 
-### 2026-07-14 — Intervals.icu `i165991824`
+### 2026-07-14 — `i165991824`
 
-- Odyssey session, Yoyogi.
-- `20 min pace run / tempo`.
+- Yoyogi; `20 min pace run / tempo`.
 - Approx. fast 3:50/km; B ~4:30/km.
-- Participants could self-adjust if unable to sustain the planned pace.
-- Operational feedback: good fit for Yoyogi.
+- Operationally a good Yoyogi fit.
 
-### 2026-07-21 — Intervals.icu `i167711146`
+### 2026-07-21 — `i167711146`
 
-- Odyssey session, Gaien.
-- `1 km × 4`.
+- Gaien; `1 km × 4`.
 - Fast side approximately 3:40/km.
-- Recovery = remaining ~300–325 m of the 1.325 km loop as jog.
-- Operational feedback: easy to run as a group session.
+- Recovery = remaining ~300–325 m jog.
+- Operationally easy to run.
 
-### 2026-08-04 — Intervals.icu `i172341372`
+### 2026-08-04 — `i172341372`
 
-- Odyssey session, Yoyogi.
-- ~100 m hill dash × 15.
-- Operational feedback: useful occasionally, not as a frequent default.
+- Yoyogi; ~100-m hill dash ×15.
+- Useful occasionally, not as a frequent default.
 
 ### Explicit exclusions
 
 - 2026-08-11 — not Odyssey.
 - 2026-08-18 `i177181493` — not Odyssey.
-- 2026-07-07 — not confirmed; do not register as Odyssey history without new evidence.
+- 2026-07-07 — not confirmed.
 
 ---
 
-## 13. What the system must never claim
+## 16. Claims the system must never make
 
-Do **not** write statements such as:
+Do not claim:
 
 - “1 km × 4 with 2 min recovery is scientifically optimal.”
 - “Group A must always run 3:40/km.”
 - “Active recovery is always better.”
 - “Polarized training proves Tuesday should be VO2 every week.”
-- “Everyone should run the same distance to receive the same workout.”
+- “Everyone should run the same distance for the same stimulus.”
 - “Four Tuesdays form a scientifically mandatory block.”
+- “More time near VO2max guarantees better race performance.”
+- “This one session improves durability.”
+- “Heat requires exactly X seconds/km reduction.”
 
-Instead use the pattern:
+Use:
 
 ```text
-Evidence says: <broad supported principle>
-Inference says: <how that principle maps to this month / group / venue>
-Coaching judgment says: <the exact operational prescription>
+Evidence says: <supported broad principle>
+Inference says: <how it applies to this milestone/group/venue>
+Coaching judgment says: <exact prescription>
 ```
 
 ---
 
-## 14. Design quality check before a monthly PLAN is written
+## 17. Design quality check
 
-For each proposed Tuesday, verify:
+For each Tuesday verify:
 
-1. What is the **primary training purpose**?
-2. Which evidence principle supports that purpose?
-3. Is the exact prescription clearly separated from what the evidence directly proves?
-4. Does work duration create a reasonably comparable stimulus across ability groups?
-5. Are groups based on this workout, not permanent runner rank?
-6. Is recovery chosen for a purpose rather than copied from habit?
-7. Does the venue help or distort the intended stimulus?
-8. Does the entire session fit 20:00–21:00 including warm-up and cooldown?
-9. Does the session make sense in the sequence of the calendar month and next milestone?
-10. If close to a race, is fatigue cost justified?
-11. Is the session still useful to members who are not racing the target event?
-12. Can the Main Workout remain stable after monthly announcement while pace/group details remain adjustable?
+1. Primary training target?
+2. Relevant Evidence Claim IDs?
+3. Expected transfer to running?
+4. Acute versus chronic versus performance evidence separated?
+5. Why time or distance?
+6. Expected work duration and cumulative dose for every group?
+7. Recovery purpose?
+8. Pace based on relevant current performance rather than aspiration alone?
+9. Venue and environment preserve or distort the target?
+10. Full session fits 20:00–21:00?
+11. Sequence and race proximity justify fatigue cost?
+12. Useful to non-participants?
+13. Main structure stable after announcement?
+14. Training Effect remains true after modest day-of adjustment?
 
-If these questions cannot be answered, the workout is not ready for PLAN.
+If these cannot be answered, the workout is not ready for PLAN.
 
 ---
 
-## 15. Participant-facing `Training Effect` communication
+## 18. Participant-facing `Training Effect`
 
-The PLAN includes a `Training Effect` column so the purpose of each workout can be explained to members without exposing the full evidence database or coaching logic.
-
-### Role of each PLAN field
-
-- **[Coaching judgment]** `Focus` is a short training-category label such as `Threshold`, `Aerobic Power`, `Speed Endurance`, or `Sharpening`.
-- **[Coaching judgment]** `Training Effect` is the participant-facing explanation: **what the workout stimulates → how that can help running**.
-- **[Coaching judgment]** `Notes` is reserved for operational context, weather, race proximity, execution cautions, and other session-specific notes. Do not use `Notes` as a second explanation field.
-
-### Writing standard
-
-- **[Coaching judgment]** Keep `Training Effect` to roughly **2–3 short Japanese lines** that can be read aloud before the session or reused in a Strava announcement.
-- **[Inference]** Translate the broad evidence-supported adaptation into plain language; do not reproduce scientific terminology merely to sound rigorous.
-- **[Evidence-based]** Describe likely training qualities rather than claiming one exact workout guarantees a specific adaptation or race result.
-- **[Coaching judgment]** Participant-facing copy does not need citations. Citations and evidence strength live in `knowledge/evidence.md`.
-- **[Coaching judgment]** Avoid unsupported numerical promises or oversimplified physiology such as “VO2maxが○%上がる,” “乳酸を除去する,” or “この練習で必ず速くなる.”
-- **[Coaching judgment]** Do not justify an exact rep count, recovery, or pace by saying that science proves that exact prescription.
-
-### Default sentence pattern
+`Training Effect` explains:
 
 ```text
 <何を刺激する練習か>。
 <それが走りにどうつながるか>。
 ```
 
-The wording should describe the **primary intended stimulus**, not every possible adaptation from the workout.
+Rules:
 
-### Participant-facing examples
+- 2–3 short Japanese lines;
+- plain language;
+- describe the intended quality, not every possible adaptation;
+- no citations in PLAN;
+- no guaranteed result or unsupported numerical promise;
+- no oversimplifications such as “乳酸を除去する” or “必ずVO2maxが上がる”;
+- exact rep count/rest must not be described as scientifically unique.
 
-#### Threshold / Tempo
+Examples:
+
+### Threshold
 
 ```text
 やや高い強度を長く保つ力を鍛える練習。
 速めのペースでも余裕を保ち、後半まで崩れにくい走りにつなげます。
 ```
 
-#### Aerobic Power / VO2
+### Aerobic Power
 
 ```text
-高い酸素摂取が必要な強度で繰り返し走る練習。
-速いペースを有酸素で支える力を刺激し、スピードの余裕度を高めることを狙います。
+高い酸素摂取が必要な強度を繰り返し走る練習。
+速いペースを有酸素で支える力と、スピードの余裕度を刺激します。
 ```
 
-#### 1 km / Speed Endurance
+### 1 km Speed Endurance
 
 ```text
-1km前後の速いペースを、疲れても維持する力を狙う練習。
-スピードそのものだけでなく、速さを最後まで保つ力を磨きます。
+1kmに近い速いリズムを、疲れても維持する力を狙う練習。
+スピードだけでなく、その速さを最後まで保つ力を磨きます。
 ```
 
-#### Short Speed / Neuromuscular
+### Durability-oriented sustained work
 
 ```text
-短い時間を速く、フォームを崩さず走る練習。
-脚の回転や動きのキレを刺激し、速い動きをスムーズに出す感覚を作ります。
+長めの時間をコントロールして走り、疲れてきてもペースとフォームを保つ練習。
+長距離レースの後半でも走りを崩しにくくする土台を狙います。
 ```
 
-#### Hills
-
-```text
-上りを使って心肺と脚への負荷を同時に高める練習。
-平地とは違う形で、走るためのパワーと強さを刺激します。
-```
-
-#### Marathon-oriented controlled work
-
-```text
-長めの時間をコントロールして走り続ける練習。
-無理に上げすぎず、一定の速いペースを長く維持する力を磨きます。
-```
-
-#### Pre-race Sharpening
+### Sharpening
 
 ```text
 レース前に短く速い動きを入れて、スピード感を整える練習。
-疲労を増やしすぎず、速いペースへの感覚を残すことを狙います。
+疲労を増やしすぎず、速いペースへの感覚を残します。
 ```
-
-### Final communication check
-
-Before filling `Training Effect`, ask:
-
-1. Can a runner understand it without knowing VO2max, lactate terminology, or periodization theory?
-2. Does it explain both **what is being trained** and **why that matters**?
-3. Is it consistent with the evidence boundary in `evidence.md`?
-4. Would it still be true if the exact rep count or pace range were adjusted slightly on the day?
-
-If the answer to any item is no, rewrite the explanation before publishing the monthly PLAN.
