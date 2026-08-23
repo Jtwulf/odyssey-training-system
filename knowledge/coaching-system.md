@@ -26,6 +26,7 @@ Detailed evidence starts at `knowledge/evidence.md`. Google Sheets formatting an
 ### Non-scope
 
 - **[Coaching judgment]** Do not manage each participant's weekly mileage, sleep, fatigue, injury history, Strava history, or individual weekly plan.
+- **[Coaching judgment]** Do not build or maintain an Odyssey participant-performance database merely to assign runners to A/B/C groups.
 - **[Coaching judgment]** Do not import Justin's personal JTBC training state or personal race targets.
 - **[Inference]** Whole-program concepts such as polarized/pyramidal TID are context, not Tuesday-only targets, because Odyssey controls one session per week.
 
@@ -210,33 +211,44 @@ Explicitly answer:
 
 ## 7. Pace-group system
 
-### Group identity
+### Purpose and participant choice
 
-- **[Coaching judgment]** A/B/C are **Workout Target Groups**, not permanent runner rankings.
-- **[Coaching judgment]** A runner may be A on threshold day and B on short-speed day.
-- **[Coaching judgment]** Sex is not a grouping criterion; current relevant performance is.
-- **[Coaching judgment]** PLAN uses Group A, Group B, and Group C as its three workout-target bands.
+- **[Coaching judgment]** A/B/C are **Workout Target Groups**: simple participant-facing pace options, not permanent runner rankings.
+- **[Coaching judgment]** Odyssey publishes useful target bands and enough context for each runner to choose the most appropriate group for that session.
+- **[Coaching judgment]** Runners self-select A/B/C. The system does not require the organizer to maintain individual performance records or assign every participant to a group before each session.
+- **[Coaching judgment]** A runner may choose a different band on another workout type, day, or set of conditions; this does not require special administrative handling.
+- **[Coaching judgment]** The main design priority is a clear, sustainable group operation. Physiological comparability should be improved within that constraint rather than by adding participant-data management.
+- **[Coaching judgment]** Sex is not a grouping criterion; the target bands are performance/pace guides available to any participant.
 
-### Pace-setting hierarchy
+### Pace-band design
 
-1. recent performance in the same/similar workout;
-2. recent race performance close to the session demand;
-3. stable threshold/aerobic-power training history;
-4. broader race target only when more specific data are unavailable;
-5. conservative first-rep calibration when uncertainty remains.
+- **[Coaching judgment]** Keep bands narrow enough to remain meaningful but wide enough to be usable by a mixed-ability group.
+- **[Coaching judgment]** Group A should normally stay within about a **10 sec/km** pace range because a large absolute spread at faster speeds creates a relatively large practical difference.
+- **[Coaching judgment]** Group B and Group C may use a wider range, including roughly **15–20 sec/km** when needed to keep the session inclusive and operationally simple.
+- **[Coaching judgment]** Published ranges are guidance, not a requirement to force every runner to hit the same exact pace. Conditions, current feel, and execution quality may justify modest on-the-day adjustment.
+
+### Pace-setting hierarchy for the published bands
+
+1. relevant Odyssey field calibration from similar sessions;
+2. relevant race-performance reference ranges when useful;
+3. the physiological/race-specific purpose of the session;
+4. conservative adjustment for uncertainty, environment, and group logistics.
+
+Do not collect participant data solely to run this hierarchy. It is used to design useful public A/B/C options, not to score or classify individuals.
 
 ### Display
 
 - Normally show pace ranges, not a single second per kilometer.
 - For distance reps, show practical rep split plus pace where helpful.
 - For short work, effort/rhythm may be more honest than km pace.
+- Where useful, the participant-facing description may include a simple performance-level reference so a runner who is unsure can choose a band without organizer intervention.
 
-### Initial field calibration — not a permanent pace table
+### Current field calibration — not a permanent pace table
 
 - 2-km repetitions, 2-min rest: fastest ~3:40–3:50/km; next ~4:10/km; slower ~5:00/km.
 - 1-km repetitions: fastest ~3:30/km; next ~3:40–3:50/km; next ~4:20–4:30/km.
 
-Recalibrate from actual performance.
+Recalibrate the published bands from actual Odyssey execution and the purpose of the session. The exact performance-level anchors for A/B/C are refined separately from this operating model.
 
 ---
 
@@ -360,7 +372,7 @@ Operationally simple, but faster/slower groups receive different work and recove
 Once a calendar month's plan has been announced:
 
 - preserve the Main Workout structure unless safety/logistics or an explicitly approved coaching reason requires change;
-- allowable adjustments include pace, number of groups, assignment, heat response, modest recovery change, and shortening one group;
+- allowable adjustments include pace, group assignment, heat response, modest recovery change, and shortening one group;
 - avoid changing an announced `1 km × 5` into an unrelated `400 m × 12` casually.
 
 This is an operational commitment, not a scientific claim.
@@ -456,7 +468,7 @@ For each Tuesday verify:
 5. Why time or distance?
 6. Expected work duration and cumulative dose for every group?
 7. Recovery purpose?
-8. Pace based on relevant current performance rather than aspiration alone?
+8. Published A/B/C bands provide clear self-selection guidance and fit the session purpose?
 9. Venue and environment preserve or distort the target?
 10. Full session fits 20:00–21:00?
 11. Sequence and race proximity justify fatigue cost?
