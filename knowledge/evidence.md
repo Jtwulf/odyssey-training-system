@@ -158,7 +158,7 @@ Each central claim distinguishes where applicable:
 
 - one optimal repetition count, recovery, pace, or work-to-rest ratio;
 - one best time-based or distance-based format for mixed groups;
-- exact A/B/C/D pace bands;
+- exact A/B/C pace bands;
 - a universal warm-up drill sequence;
 - one exact 1-km sharpening workout four days before racing;
 - a fixed heat pace adjustment;
