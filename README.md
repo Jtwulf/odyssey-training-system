@@ -9,6 +9,7 @@ Odyssey Running の毎週火曜 Quality Session を、科学的エビデンス�
 - 主会場: Yoyogi Park / Meiji Jingu Gaien
 - カレンダー月単位でのセッション設計
 - Evidence と Coaching Logic の明文化
+- Google Sheets PLAN の安定した運用・表示ルール
 
 ## Non-scope
 
@@ -20,11 +21,13 @@ Odyssey Running の毎週火曜 Quality Session を、科学的エビデンス�
 
 ## Source of Truth
 
-- **GitHub = WHY / HOW** — Evidence + Coaching Logic
+- **GitHub = WHY / HOW** — Evidence + Coaching Logic + persistent PLAN operating rules
 - **Google Sheets = WHAT / WHEN** — 実際の月間 Workout Plan
 - **Strava = Announcement** — 一般参加者への最終告知
 
 GitHub は Knowledge Base のみを保持し、月間PLANを Google Sheets と二重管理しません。
+
+継続的に適用すべきルールやユーザーからの修正は、チャット履歴やアシスタントの記憶だけに依存せず、GitHub の該当ルールファイルへ永続化します。Google Sheets `SYSTEM` は運用上のクイックリファレンスとして使えますが、永続ルールの正本は GitHub です。
 
 ## Repository structure
 
@@ -33,6 +36,11 @@ README.md
 knowledge/
   evidence.md
   coaching-system.md
+  plan-operations.md
 ```
+
+- `evidence.md` — 研究エビデンス
+- `coaching-system.md` — Odysseyへのコーチング上の翻訳
+- `plan-operations.md` — PLANの書き方・時間/距離選択・表示・変更・ルール永続化
 
 必要性が明確になるまで、plans / state / reviews / automation 等は追加しません。
