@@ -138,6 +138,14 @@ Schoenmakers P et al. *Time spent at or near VO2max during high-intensity interv
 - Key use: work bouts ≥2 minutes and greater cumulative duration generally accumulate more high-oxygen-uptake time; acute proxy, not guaranteed chronic superiority.
 - URL: https://pubmed.ncbi.nlm.nih.gov/42237396/
 
+### PMID-42482078
+
+Held S et al. *Comparison of high-intensity interval training protocol designs on accumulated time ≥ 90% VO2max: a network meta-analysis.* BMC Sports Sci Med Rehabil. 2026;18(1):336. DOI: 10.1186/s13102-026-01891-7.
+
+- Design/population: network meta-analysis of 19 publications, 20 study units, and 240 healthy athletes; protocol nodes classified by work duration, work-rest structure, intensity pattern, and within-session progression.
+- Key use: no HIIT structure differed significantly from even long intervals for accumulated time ≥90% VO2max; exploratory rankings were limited by substantial heterogeneity, significant inconsistency, and sparse nodes.
+- URL: https://pubmed.ncbi.nlm.nih.gov/42482078/
+
 ### PMID-39835194
 
 Fleckenstein J et al. *Faster intervals, faster recoveries - intensified short VO2max running intervals are inferior to traditional long intervals in terms of time spent above 90% VO2max.* Front Sports Act Living. 2025. DOI: 10.3389/fspor.2024.1507957.
@@ -346,7 +354,7 @@ Hunter B et al. *Durability as an index of endurance exercise performance: Metho
 
 Hunter B, Muniz-Pumares D. *Durability of Parameters Associated With Endurance Running in Marathoners.* Eur J Sport Sci. 2025;25(11):e70073. DOI: 10.1002/ejsc.70073.
 
-- Design/population: 18 2024 London Marathon participants, 11 male; mean finish 3:17; pre/post 90-minute run.
+- Design/population: 18 2024 London Marathon participants, 11 male; mean finish 3:17; pre/post 90-minute run at the runner's fresh-state lactate-threshold speed.
 - Key use: VO2peak and lactate-threshold speed deteriorated; smaller threshold-speed deterioration was associated with faster marathon performance.
 - URL: https://pubmed.ncbi.nlm.nih.gov/41128270/
 
