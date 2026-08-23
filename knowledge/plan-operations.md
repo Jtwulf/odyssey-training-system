@@ -104,7 +104,7 @@ The standard PLAN columns are:
 
 `Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Notes`
 
-`Group D` is not part of the standard Odyssey operating model. Use A/B/C as the available target-group columns. The exact A/B/C targeting/calibration rules are governed by `coaching-system.md` and may be refined separately; removing Group D does not by itself redefine the current A/B/C pace bands.
+Group A, Group B, and Group C are the standard workout-target columns. Their exact targeting and calibration rules are governed by `coaching-system.md` and may be refined separately.
 
 `Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their complete operational detail belongs in `Workout Details`, while the main-set recovery is also summarized in `Main Workout` when relevant. Do not duplicate the same instructions across separate columns.
 
