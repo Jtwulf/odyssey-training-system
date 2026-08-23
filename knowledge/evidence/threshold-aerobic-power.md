@@ -166,7 +166,7 @@ Potential development of VO2max, maximal aerobic speed/velocity, and the aerobic
 
 ### Acute evidence
 
-Strongest evidence concerns time at high oxygen uptake. Work duration and cumulative duration materially change this response. Variable-intensity intervals may increase time near VO2max in some protocols, but a newer network meta-analysis reported substantial heterogeneity/inconsistency and no clear superiority over even long intervals.
+Strongest evidence concerns time at high oxygen uptake. Work duration and cumulative duration materially change this response. Variable-intensity intervals may increase time near VO2max in some protocols, but a newer network meta-analysis of 19 publications and 240 athletes reported substantial heterogeneity/inconsistency and no clear superiority of any protocol structure over even long intervals.
 
 ### Chronic adaptation evidence
 
@@ -188,12 +188,13 @@ Interval-training interventions can improve time-trial performance. Response dep
 ### Population / context
 
 - Acute meta-analysis: mixed healthy/trained participants and exercise modalities.
+- Network meta-analysis: 19 publications, 20 study units, 240 athletes; several protocol nodes were sparse and the network was heterogeneous/inconsistent.
 - Runner-specific crossover: 12 highly trained middle-distance runners.
 - Intervention meta-analysis: 491 adults, inactive through trained, mixed endurance modalities.
 
 ### Evidence strength
 
-**High** for the acute multi-minute/high-oxygen-uptake relationship; **Moderate** for chronic adaptation and performance translation.
+**High** for the acute multi-minute/high-oxygen-uptake relationship; **Moderate** for protocol ranking, chronic adaptation, and performance translation.
 
 ### Directness to Odyssey
 
@@ -201,7 +202,7 @@ Interval-training interventions can improve time-trial performance. Response dep
 
 ### Limitations
 
-Time near VO2max is a proxy. Maximizing it is not the only objective and may increase fatigue or degrade mechanics.
+Time near VO2max is a proxy. Maximizing it is not the only objective and may increase fatigue or degrade mechanics. Exploratory protocol rankings should not be treated as proof of superiority.
 
 ### What this does not prove
 
@@ -212,7 +213,7 @@ Time near VO2max is a proxy. Maximizing it is not the only objective and may inc
 
 ### Sources
 
-`PMID-42237396`, `PMID-39835194`, `PMID-33826121`
+`PMID-42237396`, `PMID-42482078`, `PMID-39835194`, `PMID-33826121`
 
 ---
 
