@@ -370,7 +370,7 @@ More runners complete a meaningful session without the slowest group receiving e
 
 ### Practical implications
 
-- A/B/C/D are workout-target groups, not permanent rankings.
+- A/B/C are workout-target groups, not permanent rankings.
 - One group may complete fewer reps or a shorter distance when necessary.
 - Recovery can remain time-based even when work is distance-based.
 - Pace ranges should be calibrated from recent relevant performance.
