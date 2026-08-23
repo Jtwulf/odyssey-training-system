@@ -237,19 +237,23 @@ The references are deliberately approximate. Marathon ability is not a complete 
 
 - **[Coaching judgment]** Design the actual A/B/C pace from the **purpose and demand of the workout first**. Do not mechanically derive every workout pace from marathon time.
 - **[Coaching judgment]** Marathon-level references may be used as a sanity check or rough anchor, but the workout target determines the final band.
+- **[Coaching judgment]** Current Odyssey field calibration and the existing PLAN pace bands are important reasonableness checks. If a theory- or formula-driven recalculation produces a large departure from a pace that has otherwise been operating plausibly, re-examine the assumptions and field context before changing the PLAN rather than replacing it automatically.
 - **[Coaching judgment]** Keep bands narrow enough to remain meaningful but wide enough to be usable by a mixed-ability group.
-- **[Coaching judgment]** Group A should normally stay within about a **10 sec/km** pace range because a large absolute spread at faster speeds creates a relatively large practical difference.
-- **[Coaching judgment]** Group B may use a somewhat wider range when needed for inclusive and simple operation.
-- **[Coaching judgment]** Group C is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range** to absorb as much of the slower field as reasonably possible without making the band meaningless.
+- **[Coaching judgment]** Group A should stay within about a **10 sec/km maximum range**.
+- **[Coaching judgment]** Group B should preferably stay near a **10 sec/km range** and should normally remain within about **15 sec/km maximum**.
+- **[Coaching judgment]** Group C is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range**. Treat about **20 sec/km as the normal maximum** rather than expanding the band indefinitely to cover every slower runner.
 - **[Coaching judgment]** Group C is intended to remain usable for runners around **4:10–4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
+- **[Coaching judgment]** Gaps between A/B/C pace ranges are acceptable. The three bands do not need to form a continuous pace ladder because participants self-select the most appropriate actual pace.
+- **[Coaching judgment]** Round published per-kilometer pace targets to practical **5 sec/km increments**.
 - **[Coaching judgment]** Do not add special C-only participant-facing wording by default. Keep PLAN and announcement presentation consistent across A/B/C; use normal on-the-day coaching when someone falls outside the published band.
 - **[Coaching judgment]** Published ranges are guidance, not a requirement to force every runner to hit the same exact pace. Conditions, current feel, and execution quality may justify modest on-the-day adjustment.
 
-### Distance-based dose adjustment
+### Group-specific dose adjustment
 
-- **[Coaching judgment]** In distance-based sessions, Group C may complete fewer repetitions when its longer repetition time would otherwise create excessive total quality duration, fatigue, or session-time pressure.
-- **[Coaching judgment]** Group C split ranges may be widened when useful for workload, time, or logistics, but this is an available adjustment rather than an automatic rule for every distance-based workout.
-- **[Coaching judgment]** The adjustment should preserve the workout's primary purpose rather than merely force identical distance or repetition counts across A/B/C.
+- **[Coaching judgment]** Group C may complete fewer repetitions when its longer repetition time, current load, or session-time requirement would otherwise create excessive total quality duration or fatigue. This option is available for both distance-based and time-based sessions when needed.
+- **[Coaching judgment]** Group-specific repetition reductions should normally be a **Group C tool**. Keep A and B on the same repetition count when practical rather than routinely creating separate A/B volumes.
+- **[Coaching judgment]** In distance-based sessions, use Group C repetition count and practical split targets together to keep total quality time and the workout purpose appropriate.
+- **[Coaching judgment]** Do not create another slower group by default. If participation demand below the current C coverage becomes material in practice, reconsider the group system deliberately rather than pre-emptively adding complexity.
 
 ### Pace-setting hierarchy for the published bands
 
@@ -263,9 +267,16 @@ Do not collect participant data solely to run this hierarchy. It is used to desi
 ### Display
 
 - Normally show pace ranges, not a single second per kilometer.
-- For distance reps, show practical rep split plus pace where helpful.
-- For short work, effort/rhythm may be more honest than km pace.
+- The **per-kilometer pace is the primary reference** whenever it is meaningful.
+- For distance repetitions, also show a practical rep split as a reference while retaining the corresponding `/km` pace. The split may use one-second precision when helpful even though `/km` targets are rounded to 5-second increments.
+- For short work, effort/rhythm may supplement pace, but do not omit a meaningful `/km` pace merely because a split is shown.
 - Do not normally add marathon-time labels such as `Sub-2:50`, `Sub-3`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
+
+### Environment and day-of calibration
+
+- **[Evidence-based]** Heat, humidity, wind, surface, and congestion can change the relative strain of a fixed pace.
+- **[Coaching judgment]** Do not require the baseline PLAN pace to be pre-adjusted from Tokyo historical-average temperature or a fixed seasonal penalty table.
+- **[Coaching judgment]** Keep the planned target as the baseline and make the smallest necessary adjustment on the day when actual conditions materially change the intended stimulus. Use the heat/environment hierarchy in Section 12.
 
 ### Current field calibration — not a permanent pace table
 
