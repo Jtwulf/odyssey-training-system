@@ -212,10 +212,10 @@ Explicitly answer:
 
 ### Group identity
 
-- **[Coaching judgment]** A/B/C/D are **Workout Target Groups**, not permanent runner rankings.
+- **[Coaching judgment]** A/B/C are **Workout Target Groups**, not permanent runner rankings.
 - **[Coaching judgment]** A runner may be A on threshold day and B on short-speed day.
 - **[Coaching judgment]** Sex is not a grouping criterion; current relevant performance is.
-- **[Coaching judgment]** Use 2–4 groups depending on attendance and distribution.
+- **[Coaching judgment]** PLAN uses Group A, Group B, and Group C as its three workout-target bands.
 
 ### Pace-setting hierarchy
 
