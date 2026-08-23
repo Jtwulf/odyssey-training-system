@@ -118,7 +118,7 @@ AP-001
 = Multi-minute intervals are effective for accumulating high oxygen-uptake time
 
 Sources
-= PMID-42237396, PMID-39835194, PMID-33826121
+= PMID-42237396, PMID-42482078, PMID-39835194, PMID-33826121
 ```
 
 Each central claim distinguishes where applicable:
