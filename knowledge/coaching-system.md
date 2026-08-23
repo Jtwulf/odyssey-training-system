@@ -410,3 +410,95 @@ For each proposed Tuesday, verify:
 12. Can the Main Workout remain stable after monthly announcement while pace/group details remain adjustable?
 
 If these questions cannot be answered, the workout is not ready for PLAN.
+
+---
+
+## 15. Participant-facing `Training Effect` communication
+
+The PLAN includes a `Training Effect` column so the purpose of each workout can be explained to members without exposing the full evidence database or coaching logic.
+
+### Role of each PLAN field
+
+- **[Coaching judgment]** `Focus` is a short training-category label such as `Threshold`, `Aerobic Power`, `Speed Endurance`, or `Sharpening`.
+- **[Coaching judgment]** `Training Effect` is the participant-facing explanation: **what the workout stimulates → how that can help running**.
+- **[Coaching judgment]** `Notes` is reserved for operational context, weather, race proximity, execution cautions, and other session-specific notes. Do not use `Notes` as a second explanation field.
+
+### Writing standard
+
+- **[Coaching judgment]** Keep `Training Effect` to roughly **2–3 short Japanese lines** that can be read aloud before the session or reused in a Strava announcement.
+- **[Inference]** Translate the broad evidence-supported adaptation into plain language; do not reproduce scientific terminology merely to sound rigorous.
+- **[Evidence-based]** Describe likely training qualities rather than claiming one exact workout guarantees a specific adaptation or race result.
+- **[Coaching judgment]** Participant-facing copy does not need citations. Citations and evidence strength live in `knowledge/evidence.md`.
+- **[Coaching judgment]** Avoid unsupported numerical promises or oversimplified physiology such as “VO2maxが○%上がる,” “乳酸を除去する,” or “この練習で必ず速くなる.”
+- **[Coaching judgment]** Do not justify an exact rep count, recovery, or pace by saying that science proves that exact prescription.
+
+### Default sentence pattern
+
+```text
+<何を刺激する練習か>。
+<それが走りにどうつながるか>。
+```
+
+The wording should describe the **primary intended stimulus**, not every possible adaptation from the workout.
+
+### Participant-facing examples
+
+#### Threshold / Tempo
+
+```text
+やや高い強度を長く保つ力を鍛える練習。
+速めのペースでも余裕を保ち、後半まで崩れにくい走りにつなげます。
+```
+
+#### Aerobic Power / VO2
+
+```text
+高い酸素摂取が必要な強度で繰り返し走る練習。
+速いペースを有酸素で支える力を刺激し、スピードの余裕度を高めることを狙います。
+```
+
+#### 1 km / Speed Endurance
+
+```text
+1km前後の速いペースを、疲れても維持する力を狙う練習。
+スピードそのものだけでなく、速さを最後まで保つ力を磨きます。
+```
+
+#### Short Speed / Neuromuscular
+
+```text
+短い時間を速く、フォームを崩さず走る練習。
+脚の回転や動きのキレを刺激し、速い動きをスムーズに出す感覚を作ります。
+```
+
+#### Hills
+
+```text
+上りを使って心肺と脚への負荷を同時に高める練習。
+平地とは違う形で、走るためのパワーと強さを刺激します。
+```
+
+#### Marathon-oriented controlled work
+
+```text
+長めの時間をコントロールして走り続ける練習。
+無理に上げすぎず、一定の速いペースを長く維持する力を磨きます。
+```
+
+#### Pre-race Sharpening
+
+```text
+レース前に短く速い動きを入れて、スピード感を整える練習。
+疲労を増やしすぎず、速いペースへの感覚を残すことを狙います。
+```
+
+### Final communication check
+
+Before filling `Training Effect`, ask:
+
+1. Can a runner understand it without knowing VO2max, lactate terminology, or periodization theory?
+2. Does it explain both **what is being trained** and **why that matters**?
+3. Is it consistent with the evidence boundary in `evidence.md`?
+4. Would it still be true if the exact rep count or pace range were adjusted slightly on the day?
+
+If the answer to any item is no, rewrite the explanation before publishing the monthly PLAN.
