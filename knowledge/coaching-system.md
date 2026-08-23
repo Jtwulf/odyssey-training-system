@@ -225,13 +225,13 @@ Explicitly answer:
 
 These are rough operating images, not hard boundaries and not automatic classifications:
 
-- **Group A:** approximately marathon **2:40 to sub-2:50 level**, including runners capable of sub-2:50 and aiming beyond it.
-- **Group B:** the broad middle band on the **faster side of the roughly 3:30 marathon reference**, with sub-3 aspirants as a representative core image. A runner around 3:00–3:30 may naturally use B when the published workout pace fits.
-- **Group C:** the band on the **slower side of the roughly 3:30 marathon reference**. Its representative center is approximately **3:45 marathon level**, while the practical inclusion target extends toward roughly **4:10–4:30 marathon level** when the session can remain useful and manageable.
+- **Group A:** approximately marathon **2:40 to sub-2:50 level**.
+- **Group B:** approximately marathon **sub-2:50 to 3:30 level**, with sub-3 as a common reference point.
+- **Group C:** approximately marathon **3:30 to 4:30 level**, with **around 3:45** as the typical design anchor.
 
 These marathon references are **not normally shown in participant announcements or PLAN pace cells**. They are internal context and may be used to answer a participant who asks which band is likely to suit them. The actual workout pace/split remains the primary selection cue.
 
-The references are deliberately approximate. Marathon ability is not a complete predictor of short-distance speed, threshold speed, or performance on every workout family. The 3:30 reference is therefore a practical B/C orientation point, not an eligibility cutoff.
+The references are deliberately approximate. Marathon ability is not a complete predictor of short-distance speed, threshold speed, or performance on every workout family.
 
 ### Pace-band design
 
@@ -239,15 +239,17 @@ The references are deliberately approximate. Marathon ability is not a complete 
 - **[Coaching judgment]** Marathon-level references may be used as a sanity check or rough anchor, but the workout target determines the final band.
 - **[Coaching judgment]** Keep bands narrow enough to remain meaningful but wide enough to be usable by a mixed-ability group.
 - **[Coaching judgment]** Group A should normally stay within about a **10 sec/km** pace range because a large absolute spread at faster speeds creates a relatively large practical difference.
-- **[Coaching judgment]** Group B and Group C may use a wider range, including roughly **15–20 sec/km** when needed to keep the session inclusive and operationally simple.
+- **[Coaching judgment]** Group B may use a somewhat wider range when needed for inclusive and simple operation.
+- **[Coaching judgment]** Group C is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range** to absorb as much of the slower field as reasonably possible without making the band meaningless.
+- **[Coaching judgment]** Group C is intended to remain usable for runners around **4:10–4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
+- **[Coaching judgment]** Do not add special C-only participant-facing wording by default. Keep PLAN and announcement presentation consistent across A/B/C; use normal on-the-day coaching when someone falls outside the published band.
 - **[Coaching judgment]** Published ranges are guidance, not a requirement to force every runner to hit the same exact pace. Conditions, current feel, and execution quality may justify modest on-the-day adjustment.
-- **[Coaching judgment]** A single narrow Group C pace cannot be assumed to create the same relative intensity for every runner from roughly 3:30 through 4:30 marathon ability. When that spread matters, preserve the simple three-group operation by using effort cues, conservative C pacing, or group-specific volume/repetition adjustments rather than pretending the pace is equally physiological for everyone.
 
-### Group-specific volume
+### Distance-based dose adjustment
 
-- **[Coaching judgment]** Distance-based workouts may prescribe fewer repetitions or less total distance for Group C when slower repetition times would otherwise create excessive total work duration or fatigue.
-- **[Coaching judgment]** This is a normal dose-adjustment tool, not a lower-status version of the workout. Use it only when it better preserves the session's primary target and the 60-minute operating window.
-- **[Coaching judgment]** Group-specific repetition changes are not automatic. Compare expected rep duration and cumulative quality dose before deciding.
+- **[Coaching judgment]** In distance-based sessions, Group C may complete fewer repetitions when its longer repetition time would otherwise create excessive total quality duration, fatigue, or session-time pressure.
+- **[Coaching judgment]** Group C split ranges may be widened when useful for workload, time, or logistics, but this is an available adjustment rather than an automatic rule for every distance-based workout.
+- **[Coaching judgment]** The adjustment should preserve the workout's primary purpose rather than merely force identical distance or repetition counts across A/B/C.
 
 ### Pace-setting hierarchy for the published bands
 
@@ -263,7 +265,7 @@ Do not collect participant data solely to run this hierarchy. It is used to desi
 - Normally show pace ranges, not a single second per kilometer.
 - For distance reps, show practical rep split plus pace where helpful.
 - For short work, effort/rhythm may be more honest than km pace.
-- Do not normally add marathon-time labels such as `Sub-2:50`, `Sub-3`, `3:30`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
+- Do not normally add marathon-time labels such as `Sub-2:50`, `Sub-3`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
 
 ### Current field calibration — not a permanent pace table
 
@@ -314,7 +316,6 @@ There is no default unit.
 ### Rules
 
 - Work and recovery units are independent.
-- Different groups may use different repetition counts when that better aligns total work duration or fatigue with the session purpose.
 - Do not force a 50/50 mix.
 - Before finalizing, answer: **why this unit for this purpose?**
 
