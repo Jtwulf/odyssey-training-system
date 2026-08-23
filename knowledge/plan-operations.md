@@ -104,7 +104,15 @@ The standard PLAN columns are:
 
 `Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Notes`
 
-Group A, Group B, and Group C are the standard workout-target columns. Their exact targeting and calibration rules are governed by `coaching-system.md` and may be refined separately.
+Group A, Group B, and Group C are the standard workout-target columns. Their exact targeting and calibration rules are governed by `coaching-system.md`.
+
+### Group pace / split display
+
+- Show the **per-kilometer pace range as the primary reference** whenever a pace can be meaningfully expressed in `/km`.
+- Round published per-kilometer pace targets to practical **5 sec/km increments** rather than false 1-second precision.
+- For distance repetitions, also show the practical repetition split as a reference, for example `2:03–2:12 / 600m`, while retaining the corresponding `/km` pace. Rep splits may use one-second precision when useful.
+- The A/B/C ranges do **not** need to touch or cover every pace continuously. Gaps between groups are acceptable because participants self-select the most appropriate published pace.
+- Do not add marathon-time ability labels to the PLAN group headings. Internal ability references belong in `coaching-system.md`, not participant-facing PLAN cells.
 
 `Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their complete operational detail belongs in `Workout Details`, while the main-set recovery is also summarized in `Main Workout` when relevant. Do not duplicate the same instructions across separate columns.
 
