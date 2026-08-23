@@ -27,20 +27,71 @@ Odyssey Running の毎週火曜 Quality Session を、科学的エビデンス�
 
 GitHub は Knowledge Base のみを保持し、月間PLANを Google Sheets と二重管理しません。
 
-継続的に適用すべきルールやユーザーからの修正は、チャット履歴やアシスタントの記憶だけに依存せず、GitHub の該当ルールファイルへ永続化します。Google Sheets `SYSTEM` は運用上のクイックリファレンスとして使えますが、永続ルールの正本は GitHub です。
+継続的に適用すべきルールやユーザーからの修正は、チャット履歴やアシスタントの記憶だけに依存せず、GitHub の該当ルールファイルへ永続化します。Google Sheets `SYSTEM` は運用上のクイックリファレンスですが、永続ルールの正本は GitHub です。
 
 ## Repository structure
 
 ```text
 README.md
+
 knowledge/
   evidence.md
   coaching-system.md
   plan-operations.md
+
+  evidence/
+    methods.md
+    references.md
+    intensity-domains.md
+    training-distribution-periodization.md
+    threshold-aerobic-power.md
+    interval-programming-recovery.md
+    speed-economy-hills-warmup.md
+    race-demands.md
+    durability-marathon.md
+    taper-environment.md
 ```
 
-- `evidence.md` — 研究エビデンス
-- `coaching-system.md` — Odysseyへのコーチング上の翻訳
-- `plan-operations.md` — PLANの書き方・時間/距離選択・表示・変更・ルール永続化
+### File roles
+
+- `knowledge/evidence.md` — 軽量なEvidence索引、主要原則、テーマ別routing
+- `knowledge/evidence/methods.md` — Evidence strength / Directness / Claim schema / Population metadata
+- `knowledge/evidence/references.md` — 検証済み参考文献とSource IDの正本
+- `knowledge/evidence/*.md` — Claim ID単位の詳細Evidence
+- `knowledge/coaching-system.md` — EvidenceをOdysseyの設計判断へ翻訳する正本
+- `knowledge/plan-operations.md` — PLANの書き方・時間/距離選択・表示・変更・ルール永続化
+
+## Evidence design
+
+詳細Evidenceは、単なる論文要約ではなく原則として以下を区別します。
+
+```text
+Supported claim
+Training target
+Expected transfer
+Acute evidence
+Chronic adaptation evidence
+Performance evidence
+Programming variables
+Population / context
+Evidence strength
+Directness to Odyssey
+Limitations
+What this does not prove
+Sources
+```
+
+月次PLAN設計では全Evidenceを毎回読み込まず、`knowledge/evidence.md`からマイルストーンとWorkout familyに必要なtopic fileだけを参照します。
+
+## Planning chain
+
+```text
+Evidence
+→ Training target / Expected transfer
+→ Odyssey-specific inference
+→ Exact coaching prescription
+→ Participant-facing Training Effect
+→ Google Sheets PLAN
+```
 
 必要性が明確になるまで、plans / state / reviews / automation 等は追加しません。
