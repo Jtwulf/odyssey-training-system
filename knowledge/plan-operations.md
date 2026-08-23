@@ -102,7 +102,9 @@ Examples near a 1 km event: controlled `600 m` speed-endurance repetitions or lo
 
 The standard PLAN columns are:
 
-`Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Group D | Recovery | Warm-up | Cooldown | Notes`
+`Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Group D | Notes`
+
+`Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their complete operational detail belongs in `Workout Details`, while the main-set recovery is also summarized in `Main Workout` when relevant. Do not duplicate the same instructions across separate columns.
 
 ### Main Workout
 
@@ -162,6 +164,10 @@ Do not add drills merely to make the session look sophisticated. Preparation mus
 - Keep it understandable without physiology jargon.
 - Do not claim the exact prescription guarantees an adaptation or race result.
 - It should remain substantially true if one group's pace or repetition count is modestly adjusted on the day.
+
+### Notes
+
+Use `Notes` for operational context such as race proximity, weather/heat adjustment, execution cautions, recalibration conditions, and group-specific exceptions. Do not use it to duplicate WU / PREP / MAIN / RECOVERY / CD instructions already present in `Workout Details`.
 
 ---
 
