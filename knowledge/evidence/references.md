@@ -148,9 +148,9 @@ Held S et al. *Comparison of high-intensity interval training protocol designs o
 
 ### PMID-39835194
 
-Fleckenstein J et al. *Faster intervals, faster recoveries - intensified short VO2max running intervals are inferior to traditional long intervals in terms of time spent above 90% VO2max.* Front Sports Act Living. 2025. DOI: 10.3389/fspor.2024.1507957.
+Fleckenstein D, Braunstein H, Walter N. *Faster intervals, faster recoveries - intensified short VO2max running intervals are inferior to traditional long intervals in terms of time spent above 90% VO2max.* Front Sports Act Living. 2024;6:1507957. DOI: 10.3389/fspor.2024.1507957.
 
-- Design/population: acute randomized crossover, 12 highly trained middle-distance runners.
+- Design/population: acute randomized crossover, 12 highly trained middle-distance runners (7 male, 5 female).
 - Key use: in the tested protocols, 4 × 3 minutes accumulated more time >90% VO2max than 24 × 30 seconds.
 - URL: https://pubmed.ncbi.nlm.nih.gov/39835194/
 
@@ -368,17 +368,17 @@ Nuuttila OP et al. *Durability in recreational runners: effects of 90-min low-in
 
 ### PMID-40421635
 
-*Test-Retest Reliability of Running Economy and Other Physiological Parameters During 90 min of Running in Well-Trained Male Endurance Runners.* Scand J Med Sci Sports. 2025.
+Zanini M, Folland JP, Blagrove RC. *Test-Retest Reliability of Running Economy and Other Physiological Parameters During 90 min of Running in Well-Trained Male Endurance Runners.* Scand J Med Sci Sports. 2025;35(6):e70080. DOI: 10.1111/sms.70080.
 
-- Design/population: 14 well-trained male marathoners; repeated 90-minute heavy-domain treadmill runs.
+- Design/population: 14 well-trained male marathoners; repeated 90-minute heavy-domain treadmill runs at 10% Δ between LT1 and LT2.
 - Key use: running-economy durability can be measured reliably under controlled conditions; not an intervention proving how to improve it.
 - URL: https://pubmed.ncbi.nlm.nih.gov/40421635/
 
 ### PMID-35511416
 
-*Decoupling of Internal and External Workload During a Marathon: An Analysis of Durability in 82,303 Recreational Runners.* 2022.
+Smyth B et al. *Decoupling of Internal and External Workload During a Marathon: An Analysis of Durability in 82,303 Recreational Runners.* Sports Med. 2022;52(9):2283-2295. DOI: 10.1007/s40279-022-01680-5.
 
-- Design/population: observational analysis, 82,303 marathoners including 13,125 female.
+- Design/population: observational analysis, 82,303 marathoners including 13,125 female; internal load expressed as percentage of maximum heart rate and external load as speed relative to estimated critical speed.
 - Key use: magnitude and onset of heart-rate/speed decoupling were associated with marathon performance; no causal training prescription.
 - URL: https://pubmed.ncbi.nlm.nih.gov/35511416/
 
