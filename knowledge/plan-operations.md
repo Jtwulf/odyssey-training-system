@@ -6,9 +6,10 @@ This file is the canonical operating rulebook for how Odyssey Training System wr
 
 It complements:
 
-- `knowledge/evidence.md` — what the research supports
-- `knowledge/coaching-system.md` — how evidence is translated into Odyssey coaching logic
-- Google Sheets `PLAN` — the actual WHAT / WHEN
+- `knowledge/evidence.md` — the lightweight evidence index and topic-routing entry point;
+- `knowledge/evidence/` — detailed scientific claims and verified references;
+- `knowledge/coaching-system.md` — how evidence is translated into Odyssey coaching logic;
+- Google Sheets `PLAN` — the actual WHAT / WHEN.
 
 The monthly workout plan itself must **not** be copied into GitHub.
 
@@ -49,12 +50,14 @@ then that adjustment should be written into this GitHub rulebook in the same wor
 For a meaningful monthly-plan creation or revision:
 
 1. Read the current relevant rules in `coaching-system.md` and this file.
-2. Read the current Google Sheets `PLAN` before writing.
-3. Preserve already-announced Main Workout structures unless a justified change is explicitly being made.
-4. Apply the requested revision.
-5. Re-read the affected PLAN range after writing and verify dates, workout structure, milestone placement, and formatting-sensitive text.
+2. Read `evidence.md`, identify the milestone/workout-family routing, and load only the relevant detailed topic files from `knowledge/evidence/`.
+3. Read the current Google Sheets `PLAN` before writing.
+4. Preserve already-announced Main Workout structures unless a justified change is explicitly being made.
+5. Apply the requested revision.
+6. Re-read the affected PLAN range after writing and verify dates, workout structure, milestone placement, formatting-sensitive text, and row readability.
+7. For evidence-sensitive revisions, verify that the participant-facing `Training Effect` remains inside the cited Claim boundaries.
 
-For evidence-sensitive changes, consult `evidence.md` as well.
+Do not load every evidence file by default. Read `references.md` when verifying, challenging, or updating a scientific claim—not for routine PLAN display work.
 
 ---
 
@@ -158,6 +161,7 @@ Do not add drills merely to make the session look sophisticated. Preparation mus
 - State what the workout is intended to stimulate and how that can help running.
 - Keep it understandable without physiology jargon.
 - Do not claim the exact prescription guarantees an adaptation or race result.
+- It should remain substantially true if one group's pace or repetition count is modestly adjusted on the day.
 
 ---
 
@@ -229,13 +233,31 @@ A change such as `1 km × 5` to an unrelated `400 m × 12` is a structural chang
 
 ---
 
-## 7. Rule-maintenance check
+## 7. Evidence audit of a future PLAN row
+
+Before considering a session ready, verify:
+
+1. The primary `Focus` maps to at least one relevant Evidence Claim.
+2. The `Training Effect` describes the supported target/transfer rather than promising a result.
+3. Acute response, chronic adaptation, and race-performance evidence have not been conflated.
+4. Evidence strength and directness to Odyssey are understood separately.
+5. Exact pace, repetition count, and recovery are marked mentally as coaching prescriptions rather than uniquely proven constants.
+6. Expected rep duration and total quality dose are reasonable for every proposed group.
+7. Environment and 60-minute logistics do not materially distort the intended stimulus.
+8. If current-performance information is incomplete, the first repetition or an earlier related session is used for conservative recalibration.
+
+An evidence audit does not require Claim IDs to be displayed in the Google Sheet. Keep PLAN participant-facing and operationally readable.
+
+---
+
+## 8. Rule-maintenance check
 
 At the end of a planning conversation, ask internally:
 
 1. Did the user make a correction that should affect future plans?
 2. Is that correction already represented in GitHub?
-3. If not, should `coaching-system.md`, `plan-operations.md`, or `evidence.md` be updated?
+3. If not, should `coaching-system.md`, `plan-operations.md`, `evidence.md`, a routed topic file, or `references.md` be updated?
 4. Is the Google Sheet only storing WHAT / WHEN and a convenience SYSTEM summary, rather than becoming the sole home of a durable HOW rule?
+5. Did a new or corrected scientific claim trigger an audit of affected future PLAN rows?
 
 If a future-facing rule exists only in chat, persistence is incomplete.
