@@ -171,6 +171,15 @@ Do not add drills merely to make the session look sophisticated. Preparation mus
 - Use line breaks and blank lines instead of Markdown syntax.
 - The first Tuesday row of a new calendar month receives a stronger top border to show the month boundary.
 
+### Workout-row height / clipping prevention
+
+- A populated workout row must be tall enough that the full wrapped `Workout Details` text is visible without clipping.
+- Do **not** assume Google Sheets auto-resize will correctly size heavily line-broken cells. If auto-resize produces a row that is too short, set an explicit row height.
+- After writing or materially changing `Workout Details`, verify the affected row height as part of the post-write read/check workflow.
+- With the current `【WU】 / 【PREP】 / 【MAIN】 / 【RECOVERY】 / 【CD】` format, roughly **260–285 px** is a practical baseline for populated rows, but this is an operational starting point rather than a mandatory fixed height. Use less or more when the actual content requires it.
+- Milestone rows and future `Date`-only rows should remain compact; do not expand them to workout-row height.
+- Readability takes priority over keeping all workout rows visually identical in height.
+
 ### Milestone rows
 
 For an important race or event that should be visible in the training sequence:
