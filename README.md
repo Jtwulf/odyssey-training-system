@@ -100,7 +100,7 @@ README.md
 
 - 時間ベース / 距離ベースをどう選ぶか
 - `Main Workout` / `Workout Details` / `Training Effect` の書き方
-- Group A / B / C の扱い
+- Group A / B / C / D の扱い
 - Recovery の記載方法
 - 既に告知したWorkoutをどう扱うか
 - PLANを更新した後に何を確認するか
