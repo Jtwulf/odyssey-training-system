@@ -1,6 +1,6 @@
 # PLAN Operations Rules
 
-Last updated: 2026-08-23
+Last updated: 2026-09-02
 
 This file is the canonical operating rulebook for how Odyssey Training System writes, maintains, and visually presents the Google Sheets `PLAN`.
 
@@ -102,47 +102,47 @@ Examples near a 1 km event: controlled `600 m` speed-endurance repetitions or lo
 
 The standard PLAN columns are:
 
-`Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Notes`
+`Date | Focus | Venue | Main Workout | Workout Details | Training Effect | Group A | Group B | Group C | Group D | Notes`
 
-Group A, Group B, and Group C are the standard workout-target columns. Their exact targeting and calibration rules are governed by `coaching-system.md`.
+Group A, Group B, Group C, and Group D are the standard workout-target columns. Their exact targeting and calibration rules are governed by `coaching-system.md`.
 
 ### Group pace / split display
 
 - Show the **per-kilometer pace range as the primary reference** whenever a pace can be meaningfully expressed in `/km`.
 - Round published per-kilometer pace targets to practical **5 sec/km increments** rather than false 1-second precision.
 - For distance repetitions, also show the practical repetition split as a reference, for example `2:03–2:12 / 600m`, while retaining the corresponding `/km` pace. Rep splits may use one-second precision when useful.
-- The A/B/C ranges do **not** need to touch or cover every pace continuously. Gaps between groups are acceptable because participants self-select the most appropriate published pace.
+- The A/B/C/D ranges do **not** need to touch or cover every pace continuously. Gaps between groups are acceptable because participants self-select the most appropriate published pace.
 - Do not add marathon-time ability labels to the PLAN group headings. Internal ability references belong in `coaching-system.md`, not participant-facing PLAN cells.
 
-`Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their complete operational detail belongs in `Workout Details`, while the main-set recovery is also summarized in `Main Workout` when relevant. Do not duplicate the same instructions across separate columns.
+`Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their operational detail belongs in `Workout Details`. `Main Workout` is a short workout title and should not duplicate recovery instructions.
 
 ### Main Workout
 
-Keep it scannable. Normally use no more than two short lines:
+Treat `Main Workout` as the workout title, not as the full prescription.
+
+Keep it to one short, immediately scannable line whenever possible. Use the simplest label that identifies the main set, for example:
 
 ```text
-<main set>
-<recovery>
+800 m × 5
+600 m × 5
+300 m × 4
+6 min × 3
+20 min Tempo
 ```
 
-Recovery wording must make clear whether it is:
-
-- easy jog;
-- walk / jog;
-- standing / passive;
-- none / continuous.
+- Put recovery details in `Workout Details`, not in the title.
+- Put pace targets and splits in the Group columns, not in the title.
+- If one group completes fewer repetitions, keep the common/main prescription as the title and show the group-specific exception in `Workout Details` and the relevant Group cell.
+- Avoid explanatory phrases such as `controlled`, `@ current 1 km rhythm`, or recovery wording when the workout can be identified without them.
 
 ### Workout Details
 
 Markdown rendering is not assumed. Use plain text, line breaks, and blank lines.
 
-Always use this order:
+Always use this displayed order:
 
 ```text
 【WU】
-...
-
-【PREP】
 ...
 
 【MAIN】
@@ -155,17 +155,16 @@ Always use this order:
 ...
 ```
 
-Include enough detail that the session can be run from the cell without reconstructing missing instructions:
+`【PREP】` is intentionally **not displayed in the PLAN Workout Details**. Dynamic preparation, drills, strides, or accelerations may still be part of the actual session execution according to `coaching-system.md`; they are simply omitted from this participant-facing PLAN field.
+
+Include enough detail that the displayed workout can be run without reconstructing the main prescription:
 
 - WU distance or duration;
-- drills / preparation where used;
-- strides / accelerations including number and approximate distance;
 - exact main set;
+- group-specific repetition exceptions where relevant;
 - recovery duration or distance;
 - whether recovery is jog, walk-jog, standing, or none;
 - CD distance or duration.
-
-Do not add drills merely to make the session look sophisticated. Preparation must match the session need.
 
 ### Training Effect
 
@@ -177,7 +176,7 @@ Do not add drills merely to make the session look sophisticated. Preparation mus
 
 ### Notes
 
-Use `Notes` for operational context such as race proximity, weather/heat adjustment, execution cautions, recalibration conditions, and group-specific exceptions. Do not use it to duplicate WU / PREP / MAIN / RECOVERY / CD instructions already present in `Workout Details`.
+Use `Notes` for operational context such as race proximity, weather/heat adjustment, execution cautions, recalibration conditions, and group-specific exceptions. Do not use it to duplicate WU / MAIN / RECOVERY / CD instructions already present in `Workout Details`.
 
 ---
 
@@ -196,7 +195,7 @@ Use `Notes` for operational context such as race proximity, weather/heat adjustm
 - A populated workout row must be tall enough that the full wrapped `Workout Details` text is visible without clipping.
 - Do **not** assume Google Sheets auto-resize will correctly size heavily line-broken cells. If auto-resize produces a row that is too short, set an explicit row height.
 - After writing or materially changing `Workout Details`, verify the affected row height as part of the post-write read/check workflow.
-- With the current `【WU】 / 【PREP】 / 【MAIN】 / 【RECOVERY】 / 【CD】` format, roughly **260–285 px** is a practical baseline for populated rows, but this is an operational starting point rather than a mandatory fixed height. Use less or more when the actual content requires it.
+- With the current `【WU】 / 【MAIN】 / 【RECOVERY】 / 【CD】` display format, roughly **210–250 px** is a practical baseline for populated rows, but this is an operational starting point rather than a mandatory fixed height. Use less or more when the actual content requires it.
 - Milestone rows and future `Date`-only rows should remain compact; do not expand them to workout-row height.
 - Readability takes priority over keeping all workout rows visually identical in height.
 
