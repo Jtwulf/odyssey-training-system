@@ -1,6 +1,6 @@
 # Odyssey Coaching System
 
-Last updated: 2026-08-23
+Last updated: 2026-09-02
 
 This file translates the routed Evidence Base into operating rules for Odyssey Running's Tuesday Quality Session.
 
@@ -26,7 +26,7 @@ Detailed evidence starts at `knowledge/evidence.md`. Google Sheets formatting an
 ### Non-scope
 
 - **[Coaching judgment]** Do not manage each participant's weekly mileage, sleep, fatigue, injury history, Strava history, or individual weekly plan.
-- **[Coaching judgment]** Do not build or maintain an Odyssey participant-performance database merely to assign runners to A/B/C groups.
+- **[Coaching judgment]** Do not build or maintain an Odyssey participant-performance database merely to assign runners to A/B/C/D groups.
 - **[Coaching judgment]** Do not import Justin's personal JTBC training state or personal race targets.
 - **[Inference]** Whole-program concepts such as polarized/pyramidal TID are context, not Tuesday-only targets, because Odyssey controls one session per week.
 
@@ -213,47 +213,50 @@ Explicitly answer:
 
 ### Purpose and participant choice
 
-- **[Coaching judgment]** A/B/C are **Workout Target Groups**: simple pace options for the session, not permanent runner rankings or organizer-assigned classifications.
-- **[Coaching judgment]** Odyssey publishes the A/B/C target pace or split for each workout; participants choose the band that best matches the actual prescribed pace, the day's workout, and their condition.
+- **[Coaching judgment]** A/B/C/D are **Workout Target Groups**: simple pace options for the session, not permanent runner rankings or organizer-assigned classifications.
+- **[Coaching judgment]** Odyssey publishes the A/B/C/D target pace or split for each workout; participants choose the band that best matches the actual prescribed pace, the day's workout, and their condition.
 - **[Coaching judgment]** A participant's usual group identity must not override the actual pace. A runner may choose any band that is appropriate on that day without special administrative handling.
 - **[Coaching judgment]** The organizer does not maintain individual performance records or pre-assign each runner to a group before every session.
 - **[Coaching judgment]** The main design priority is a clear, sustainable group operation. Physiological comparability should be improved within that constraint rather than by adding participant-data management.
-- **[Coaching judgment]** Sex is not a grouping criterion; all three bands are available to any participant.
-- **[Coaching judgment]** Pace order is always **A fastest → B → C**.
+- **[Coaching judgment]** Sex is not a grouping criterion; all four bands are available to any participant.
+- **[Coaching judgment]** Pace order is always **A fastest → B → C → D**.
 
 ### Internal performance-level reference
 
 These are rough operating images, not hard boundaries and not automatic classifications:
 
-- **Group A:** approximately marathon **2:40 to sub-2:50 level**.
-- **Group B:** approximately marathon **sub-2:50 to 3:30 level**, with sub-3 as a common reference point.
-- **Group C:** approximately marathon **3:30 to 4:30 level**, with **around 3:45** as the typical design anchor.
+- **Group A:** approximately marathon **2:30 to 2:45 level**; the fastest / sub-elite-oriented workout option.
+- **Group B:** approximately marathon **2:50 to sub-3:00 level**; this inherits the role previously served by Group A.
+- **Group C:** approximately marathon **3:00 to 3:30 level**; this inherits the role previously served by Group B.
+- **Group D:** approximately marathon **3:30 to 4:30 level**, with **around 3:45** as the typical design anchor; this inherits the role previously served by Group C.
 
 These marathon references are **not normally shown in participant announcements or PLAN pace cells**. They are internal context and may be used to answer a participant who asks which band is likely to suit them. The actual workout pace/split remains the primary selection cue.
 
-The references are deliberately approximate. Marathon ability is not a complete predictor of short-distance speed, threshold speed, or performance on every workout family.
+The references are deliberately approximate. Small gaps or overlaps are acceptable, and marathon ability is not a complete predictor of short-distance speed, threshold speed, or performance on every workout family.
 
 ### Pace-band design
 
-- **[Coaching judgment]** Design the actual A/B/C pace from the **purpose and demand of the workout first**. Do not mechanically derive every workout pace from marathon time.
+- **[Coaching judgment]** Design the actual A/B/C/D pace from the **purpose and demand of the workout first**. Do not mechanically derive every workout pace from marathon time.
 - **[Coaching judgment]** Marathon-level references may be used as a sanity check or rough anchor, but the workout target determines the final band.
 - **[Coaching judgment]** Current Odyssey field calibration and the existing PLAN pace bands are important reasonableness checks. If a theory- or formula-driven recalculation produces a large departure from a pace that has otherwise been operating plausibly, re-examine the assumptions and field context before changing the PLAN rather than replacing it automatically.
+- **[Coaching judgment]** When migrating existing three-group workouts into the four-group system, preserve the prior operating calibration by mapping **old A → new B, old B → new C, old C → new D**, then design the new Group A target from the workout purpose and the faster performance-level reference.
 - **[Coaching judgment]** Keep bands narrow enough to remain meaningful but wide enough to be usable by a mixed-ability group.
 - **[Coaching judgment]** Group A should stay within about a **10 sec/km maximum range**.
-- **[Coaching judgment]** Group B should preferably stay near a **10 sec/km range** and should normally remain within about **15 sec/km maximum**.
-- **[Coaching judgment]** Group C is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range**. Treat about **20 sec/km as the normal maximum** rather than expanding the band indefinitely to cover every slower runner.
-- **[Coaching judgment]** Group C is intended to remain usable for runners around **4:10–4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
-- **[Coaching judgment]** Gaps between A/B/C pace ranges are acceptable. The three bands do not need to form a continuous pace ladder because participants self-select the most appropriate actual pace.
+- **[Coaching judgment]** Group B should stay within about a **10 sec/km maximum range** where practical.
+- **[Coaching judgment]** Group C should preferably stay near a **10 sec/km range** and should normally remain within about **15 sec/km maximum**.
+- **[Coaching judgment]** Group D is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range**. Treat about **20 sec/km as the normal maximum** rather than expanding the band indefinitely to cover every slower runner.
+- **[Coaching judgment]** Group D is intended to remain usable for runners around **4:10–4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
+- **[Coaching judgment]** Gaps between A/B/C/D pace ranges are acceptable. The four bands do not need to form a continuous pace ladder because participants self-select the most appropriate actual pace.
 - **[Coaching judgment]** Round published per-kilometer pace targets to practical **5 sec/km increments**.
-- **[Coaching judgment]** Do not add special C-only participant-facing wording by default. Keep PLAN and announcement presentation consistent across A/B/C; use normal on-the-day coaching when someone falls outside the published band.
+- **[Coaching judgment]** Do not add special D-only participant-facing wording by default. Keep PLAN and announcement presentation consistent across A/B/C/D; use normal on-the-day coaching when someone falls outside the published band.
 - **[Coaching judgment]** Published ranges are guidance, not a requirement to force every runner to hit the same exact pace. Conditions, current feel, and execution quality may justify modest on-the-day adjustment.
 
 ### Group-specific dose adjustment
 
-- **[Coaching judgment]** Group C may complete fewer repetitions when its longer repetition time, current load, or session-time requirement would otherwise create excessive total quality duration or fatigue. This option is available for both distance-based and time-based sessions when needed.
-- **[Coaching judgment]** Group-specific repetition reductions should normally be a **Group C tool**. Keep A and B on the same repetition count when practical rather than routinely creating separate A/B volumes.
-- **[Coaching judgment]** In distance-based sessions, use Group C repetition count and practical split targets together to keep total quality time and the workout purpose appropriate.
-- **[Coaching judgment]** Do not create another slower group by default. If participation demand below the current C coverage becomes material in practice, reconsider the group system deliberately rather than pre-emptively adding complexity.
+- **[Coaching judgment]** Group D may complete fewer repetitions when its longer repetition time, current load, or session-time requirement would otherwise create excessive total quality duration or fatigue. This option is available for both distance-based and time-based sessions when needed.
+- **[Coaching judgment]** Group-specific repetition reductions should normally be a **Group D tool**. Keep A, B, and C on the same repetition count when practical rather than routinely creating separate A/B/C volumes.
+- **[Coaching judgment]** In distance-based sessions, use Group D repetition count and practical split targets together to keep total quality time and the workout purpose appropriate.
+- **[Coaching judgment]** Do not add a Group E by default. If participation demand below the current D coverage becomes material in practice, reconsider the group system deliberately rather than pre-emptively adding complexity.
 
 ### Pace-setting hierarchy for the published bands
 
@@ -262,7 +265,7 @@ The references are deliberately approximate. Marathon ability is not a complete 
 3. broad performance-level references as a reasonableness check;
 4. conservative adjustment for uncertainty, environment, and group logistics.
 
-Do not collect participant data solely to run this hierarchy. It is used to design useful public A/B/C options, not to score or classify individuals.
+Do not collect participant data solely to run this hierarchy. It is used to design useful public A/B/C/D options, not to score or classify individuals.
 
 ### Display
 
@@ -270,7 +273,7 @@ Do not collect participant data solely to run this hierarchy. It is used to desi
 - The **per-kilometer pace is the primary reference** whenever it is meaningful.
 - For distance repetitions, also show a practical rep split as a reference while retaining the corresponding `/km` pace. The split may use one-second precision when helpful even though `/km` targets are rounded to 5-second increments.
 - For short work, effort/rhythm may supplement pace, but do not omit a meaningful `/km` pace merely because a split is shown.
-- Do not normally add marathon-time labels such as `Sub-2:50`, `Sub-3`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
+- Do not normally add marathon-time labels such as `2:30–2:45`, `Sub-3`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
 
 ### Environment and day-of calibration
 
@@ -283,7 +286,7 @@ Do not collect participant data solely to run this hierarchy. It is used to desi
 - 2-km repetitions, 2-min rest: fastest ~3:40–3:50/km; next ~4:10/km; slower ~5:00/km.
 - 1-km repetitions: fastest ~3:30/km; next ~3:40–3:50/km; next ~4:20–4:30/km.
 
-Recalibrate the published bands from actual Odyssey execution and the purpose of the session. Current September pace bands are working estimates rather than fixed universal values.
+These observations predate the four-group expansion and are field references, not a direct A/B/C/D mapping. Recalibrate the published bands from actual Odyssey execution and the purpose of the session. Current PLAN pace bands are working estimates rather than fixed universal values.
 
 ---
 
@@ -503,7 +506,7 @@ For each Tuesday verify:
 5. Why time or distance?
 6. Expected work duration and cumulative dose for every group?
 7. Recovery purpose?
-8. Pace bands make sense for the workout purpose and broad A/B/C ability references rather than aspiration alone?
+8. Pace bands make sense for the workout purpose and broad A/B/C/D ability references rather than aspiration alone?
 9. Venue and environment preserve or distort the target?
 10. Full session fits 20:00–21:00?
 11. Sequence and race proximity justify fatigue cost?
