@@ -113,9 +113,9 @@ Group A, Group B, Group C, and Group D are the standard workout-target columns. 
 - For distance repetitions, also show the practical repetition split as a reference, for example `2:03–2:12 / 600m`, while retaining the corresponding `/km` pace. Rep splits may use one-second precision when useful.
 - The A/B/C/D ranges do **not** need to touch or cover every pace continuously. Gaps between groups are acceptable because participants self-select the most appropriate published pace.
 - Do not add marathon-time ability labels to the PLAN group headings or to the Group A/B/C/D pace cells. Those cells remain the actual workout target.
-- When a workout uses A/B/C/D pace groups, show a compact **full-marathon reference guide** inside `Workout Details` under `【MAIN】`. The current reference is `A: 2:30–2:45 / B: Sub3 target / C: 3:20–3:40 (around 3:30) / D: Sub4–4:30`.
-- The reference guide must explicitly say that the **actual workout pace / split takes priority**. Marathon time is only a rough selection aid and is not a hard classification.
-- Omit the marathon reference guide when the session has no A/B/C/D pace groups, such as an all-together recovery jog.
+- When a workout uses A/B/C/D pace groups, show the compact pace-group reference block at the **very bottom of `Workout Details`, after `【CD】`**.
+- The PLAN display reference is intentionally simplified to `A: ~2:45 / B: Sub3 / C: sub3.5 / D: Sub4~`. It is a rough group-selection aid; the actual workout pace / split remains the primary target.
+- Omit the pace-group reference block when the session has no A/B/C/D pace groups, such as an all-together recovery jog.
 
 `Recovery`, `Warm-up`, and `Cooldown` are intentionally **not separate columns**. Their operational detail belongs in `Workout Details`. `Main Workout` is a short workout title and should not duplicate recovery instructions.
 
@@ -142,7 +142,7 @@ Keep it to one short, immediately scannable line whenever possible. Use the simp
 
 Markdown rendering is not assumed. Use plain text, line breaks, and blank lines.
 
-Always use this displayed order:
+Always use this displayed workout order:
 
 ```text
 【WU】
@@ -160,25 +160,27 @@ Always use this displayed order:
 
 `【PREP】` is intentionally **not displayed in the PLAN Workout Details**. Dynamic preparation, drills, strides, or accelerations may still be part of the actual session execution according to `coaching-system.md`; they are simply omitted from this participant-facing PLAN field.
 
-When A/B/C/D pace groups are used, place the marathon reference inside the existing `【MAIN】` block rather than creating a fifth section. Use a compact format such as:
+When A/B/C/D pace groups are used, append this exact reference block **after `【CD】` as the final content in the cell**:
 
 ```text
-参考｜フルマラソン目安（当日の設定paceを優先）
-A: 2:30–2:45 / B: Sub3目標
-C: 3:20–3:40（3:30前後） / D: Sub4–4:30
+※参考｜ペースグループ目安
+A: ~2:45
+B: Sub3
+C: sub3.5
+D: Sub4~
 ```
 
-Do not show this block when there are no pace groups.
+Do not place this block under `【MAIN】`, and do not show it when there are no pace groups.
 
 Include enough detail that the displayed workout can be run without reconstructing the main prescription:
 
 - WU distance or duration;
 - exact main set;
 - group-specific repetition exceptions where relevant;
-- marathon reference guide when A/B/C/D pace groups are used;
 - recovery duration or distance;
 - whether recovery is jog, walk-jog, standing, or none;
-- CD distance or duration.
+- CD distance or duration;
+- pace-group reference footer when A/B/C/D pace groups are used.
 
 ### Training Effect
 
@@ -209,8 +211,8 @@ Use `Notes` for operational context such as race proximity, weather/heat adjustm
 - A populated workout row must be tall enough that the full wrapped `Workout Details` text is visible without clipping.
 - Do **not** assume Google Sheets auto-resize will correctly size heavily line-broken cells. If auto-resize produces a row that is too short, set an explicit row height.
 - After writing or materially changing `Workout Details`, verify the affected row height as part of the post-write read/check workflow.
-- Without the marathon reference block, roughly **210–250 px** remains a practical baseline for the current `【WU】 / 【MAIN】 / 【RECOVERY】 / 【CD】` format.
-- With the A/B/C/D marathon reference block, roughly **280–320 px** is a practical starting point. This is not a mandatory fixed height; use less or more when the actual content requires it.
+- Without the pace-group reference block, roughly **210–250 px** remains a practical baseline for the current `【WU】 / 【MAIN】 / 【RECOVERY】 / 【CD】` format.
+- With the A/B/C/D pace-group reference footer, roughly **280–320 px** is a practical starting point. This is not a mandatory fixed height; use less or more when the actual content requires it.
 - Milestone rows and future `Date`-only rows should remain compact; do not expand them to workout-row height.
 - Readability takes priority over keeping all workout rows visually identical in height.
 
