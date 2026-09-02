@@ -209,7 +209,7 @@ Explicitly answer:
 
 ---
 
-## 7. Pace-group system
+## 7. pace-group system
 
 ### Purpose and participant choice
 
@@ -226,9 +226,9 @@ Explicitly answer:
 These are rough operating images, not hard boundaries and not automatic classifications:
 
 - **Group A:** approximately marathon **2:30 to 2:45 level**; the fastest / sub-elite-oriented workout option.
-- **Group B:** approximately marathon **2:50 to sub-3:00 level**; this inherits the role previously served by Group A.
-- **Group C:** approximately marathon **3:00 to 3:30 level**; this inherits the role previously served by Group B.
-- **Group D:** approximately marathon **3:30 to 4:30 level**, with **around 3:45** as the typical design anchor; this inherits the role previously served by Group C.
+- **Group B:** approximately **sub-3 marathon target level**; centered on runners aiming to break 3:00 rather than using 2:50 as a lower-bound definition.
+- **Group C:** approximately marathon **3:20 to 3:40 level**, with **around 3:30** as the rough internal center.
+- **Group D:** approximately **sub-4 to 4:30 marathon level**.
 
 These marathon references are **not normally shown in participant announcements or PLAN pace cells**. They are internal context and may be used to answer a participant who asks which band is likely to suit them. The actual workout pace/split remains the primary selection cue.
 
@@ -244,8 +244,8 @@ The references are deliberately approximate. Small gaps or overlaps are acceptab
 - **[Coaching judgment]** Group A should stay within about a **10 sec/km maximum range**.
 - **[Coaching judgment]** Group B should stay within about a **10 sec/km maximum range** where practical.
 - **[Coaching judgment]** Group C should preferably stay near a **10 sec/km range** and should normally remain within about **15 sec/km maximum**.
-- **[Coaching judgment]** Group D is normally designed around the workout pace appropriate for the **~3:45 marathon-level anchor**, then given roughly a **10–20 sec/km practical range**. Treat about **20 sec/km as the normal maximum** rather than expanding the band indefinitely to cover every slower runner.
-- **[Coaching judgment]** Group D is intended to remain usable for runners around **4:10–4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
+- **[Coaching judgment]** Group D should use the **sub-4 to 4:30 marathon-level reference** only as a rough reasonableness check, then publish roughly a **10–20 sec/km practical range** appropriate to the workout. Treat about **20 sec/km as the normal maximum** rather than expanding the band indefinitely to cover every slower runner.
+- **[Coaching judgment]** Group D is intended to remain usable across roughly the **sub-4 to 4:30 marathon level** where practical, but the published pace band does not need to become so wide that it loses its training meaning.
 - **[Coaching judgment]** Gaps between A/B/C/D pace ranges are acceptable. The four bands do not need to form a continuous pace ladder because participants self-select the most appropriate actual pace.
 - **[Coaching judgment]** Round published per-kilometer pace targets to practical **5 sec/km increments**.
 - **[Coaching judgment]** Do not add special D-only participant-facing wording by default. Keep PLAN and announcement presentation consistent across A/B/C/D; use normal on-the-day coaching when someone falls outside the published band.
