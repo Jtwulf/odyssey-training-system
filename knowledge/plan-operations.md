@@ -1,6 +1,6 @@
 # PLAN Operations Rules
 
-Last updated: 2026-09-02
+Last updated: 2026-10-03
 
 This file is the canonical operating rulebook for how Odyssey Training System writes, maintains, and visually presents the Google Sheets `PLAN`.
 
@@ -61,40 +61,47 @@ Do not load every evidence file by default. Read `references.md` when verifying,
 
 ---
 
-## 3. Time-based vs distance-based work
+## 3. Distance-first interval prescription
 
-### No default unit
+### Interval-format rule
 
-There is **no rule that time-based work is the default and distance-based work is the exception**, or vice versa.
+For Odyssey PLAN, a workout made of repeated work bouts separated by recovery is prescribed by **distance**, not by work time.
 
-For every interval session, actively choose the unit that best serves the primary training purpose.
+Examples:
 
-### Prefer time-based work when
+```text
+2 km × 3
+1 km × 4
+800 m × 5
+400 m × 8
+```
 
-- comparable **work duration at the target intensity** across a heterogeneous group is central to the session;
-- a fixed distance would create materially different work-bout durations between groups and that difference would distort the intended stimulus;
-- the main target is a physiological domain such as controlled threshold duration or aerobic-power exposure rather than learning a specific race distance;
-- group execution is clearer with common start/stop times.
+This is an **operational clarity rule**, not a claim that distance-based prescription is physiologically superior. Participants are generally more accustomed to distance and can more easily understand what they will run, what each repetition means, and how the workout is progressing.
 
-Examples: `3 × 6 min threshold`, `5 × 3 min aerobic power`.
+### Keep repetition distance common across A/B/C/D
 
-### Prefer distance-based work when
+- Use the **same repetition distance for all pace groups whenever practical**.
+- Group differences should be expressed primarily through **pace** and, when needed, **repetition count**.
+- If slower repetition duration would create too much total quality work, reduce repetitions before changing the repetition distance. Group D is normally the first candidate for this adjustment.
+- A design such as A/B/C = 1 km while D = 800 m should be treated as an exception rather than the normal solution.
+- Use a group-specific repetition distance only when the common distance would materially distort the workout purpose, exceed the 60-minute session window, or create a meaningful safety/venue/logistics problem. Record the reason in `Notes`.
 
-- race-distance specificity or learning the feel of a defined distance matters;
-- the goal includes pace judgment over 200 m / 300 m / 400 m / 600 m / 800 m / 1 km or another meaningful segment;
-- the venue provides reliable fixed landmarks that improve execution;
-- exact distance improves participant understanding or race-rhythm rehearsal;
-- different work durations across groups are acceptable for the session objective.
+### Continuous-work exception
 
-Examples near a 1 km event: controlled `600 m` speed-endurance repetitions or low-volume `300 m` sharpening repetitions.
+Continuous tempo, steady, sustained tempo, recovery jog, and other uninterrupted running are not interval-format sessions for this rule. They may remain time-based when duration is part of the purpose, or use route distance when that is clearer.
+
+Examples:
+
+```text
+25 min Tempo
+60 min Easy Jog
+```
 
 ### Important implementation rules
 
-- **Do not choose time-based work solely because the group has mixed ability.** Mixed ability is one consideration, not the answer by itself.
-- **Do not force a 50/50 mix of time and distance.** Variety must come from training purpose, not aesthetics.
-- Work unit and recovery unit are independent. A distance-based repetition may use a time-based recovery, and vice versa.
-- Distance equality does not imply stimulus equality. Consider expected rep duration for each group before approving a distance-based session.
-- Before finalizing a monthly plan, explicitly ask: `Why is this workout time-based or distance-based?` If there is no objective answer, reconsider the prescription.
+- Work and recovery units are independent. Distance-based repetitions may use time-based recovery, jog-back distance, standing recovery, or another appropriate recovery format.
+- Common repetition distance does **not** mean equal physiological stimulus. Before approving a session, still check expected repetition duration and cumulative quality dose for every group.
+- `Main Workout` should make the distance immediately visible so participants can understand the session at a glance.
 
 ---
 
@@ -126,11 +133,11 @@ Treat `Main Workout` as the workout title, not as the full prescription.
 Keep it to one short, immediately scannable line whenever possible. Use the simplest label that identifies the main set, for example:
 
 ```text
+2 km × 3
+1 km × 4
 800 m × 5
-600 m × 5
-300 m × 4
-6 min × 3
-20 min Tempo
+400 m × 8
+25 min Tempo
 ```
 
 - Put recovery details in `Workout Details`, not in the title.
@@ -274,9 +281,10 @@ Before considering a session ready, verify:
 3. Acute response, chronic adaptation, and race-performance evidence have not been conflated.
 4. Evidence strength and directness to Odyssey are understood separately.
 5. Exact pace, repetition count, and recovery are marked mentally as coaching prescriptions rather than uniquely proven constants.
-6. Expected rep duration and total quality dose are reasonable for every proposed group.
-7. Environment and 60-minute logistics do not materially distort the intended stimulus.
-8. If current-performance information is incomplete, the first repetition or an earlier related session is used for conservative recalibration.
+6. For interval-format work, the repetition distance is distance-based and common across A/B/C/D unless a documented exception is necessary.
+7. Expected rep duration and total quality dose are reasonable for every proposed group.
+8. Environment and 60-minute logistics do not materially distort the intended stimulus.
+9. If current-performance information is incomplete, the first repetition or an earlier related session is used for conservative recalibration.
 
 An evidence audit does not require Claim IDs to be displayed in the Google Sheet. Keep PLAN participant-facing and operationally readable.
 
