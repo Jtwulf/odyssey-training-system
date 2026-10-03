@@ -117,7 +117,7 @@ Group A, Group B, Group C, and Group D are the standard workout-target columns. 
 
 - Show the **per-kilometer pace range as the primary reference** whenever a pace can be meaningfully expressed in `/km`.
 - Round published per-kilometer pace targets to practical **5 sec/km increments** rather than false 1-second precision.
-- For distance repetitions, also show the practical repetition split as a reference, for example `2:03–2:12 / 600m`, while retaining the corresponding `/km` pace. Rep splits may use one-second precision when useful.
+- In Group A/B/C/D cells, show **only the per-kilometer pace range** when a meaningful `/km` pace can be expressed. Do not also show repetition splits such as `2:03–2:12 / 600m`, `3:10–3:20 / 1km`, or `7:00–7:20 / 2km`.
 - The A/B/C/D ranges do **not** need to touch or cover every pace continuously. Gaps between groups are acceptable because participants self-select the most appropriate published pace.
 - Do not add marathon-time ability labels to the PLAN group headings or to the Group A/B/C/D pace cells. Those cells remain the actual workout target.
 - When a workout uses A/B/C/D pace groups, show the compact pace-group reference block at the **very bottom of `Workout Details`, after `【CD】`**.
@@ -141,8 +141,8 @@ Keep it to one short, immediately scannable line whenever possible. Use the simp
 ```
 
 - Put recovery details in `Workout Details`, not in the title.
-- Put pace targets and splits in the Group columns, not in the title.
-- If one group completes fewer repetitions, keep the common/main prescription as the title and show the group-specific exception in `Workout Details` and the relevant Group cell.
+- Put `/km` pace targets in the Group columns; do not duplicate repetition splits or repetition counts there.
+- If one group completes fewer repetitions, keep the common/main prescription as the title and show the group-specific exception in `Workout Details`. The Group cell remains pace-only.
 - Avoid explanatory phrases such as `controlled`, `@ current 1 km rhythm`, or recovery wording when the workout can be identified without them.
 
 ### Workout Details
