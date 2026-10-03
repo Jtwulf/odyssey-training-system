@@ -283,8 +283,9 @@ Do not collect participant data solely to run this hierarchy. It is used to desi
 
 - Normally show pace ranges, not a single second per kilometer.
 - The **per-kilometer pace is the primary reference** whenever it is meaningful.
-- For distance repetitions, also show a practical rep split as a reference while retaining the corresponding `/km` pace. The split may use one-second precision when helpful even though `/km` targets are rounded to 5-second increments.
-- For short work, effort/rhythm may supplement pace, but do not omit a meaningful `/km` pace merely because a split is shown.
+- In PLAN Group A/B/C/D cells, show **only the per-kilometer pace range** when a meaningful `/km` pace can be expressed. Do not duplicate repetition splits such as `7:00–7:20 / 2km` or `3:10–3:20 / 1km` in those cells.
+- Repetition count and any group-specific volume exception belong in `Workout Details`, not in the Group pace cells.
+- For short work, effort/rhythm may supplement the workout instructions, but keep the Group cells focused on the practical `/km` pace range.
 - Do not normally add marathon-time labels such as `2:30–2:45`, `Sub-3`, or `Sub-4` to participant announcements or PLAN group headings. If a participant asks which band may suit them, these references can be explained verbally as rough guidance.
 
 ### Environment and day-of calibration
