@@ -1,6 +1,6 @@
 # Odyssey Coaching System
 
-Last updated: 2026-09-02
+Last updated: 2026-10-03
 
 This file translates the routed Evidence Base into operating rules for Odyssey Running's Tuesday Quality Session.
 
@@ -88,7 +88,7 @@ Do not load `references.md` unless verifying or changing a claim.
 ## 3. Core design principles
 
 1. **[Evidence-based]** Quality training should not be reduced to one intensity. Threshold, aerobic power, speed, hills, and race-specific stimuli can all have roles.
-2. **[Inference]** The objective is not equal distance or pace; it is a **comparable session-purpose stimulus** appropriate to each group.
+2. **[Inference]** The objective is a **comparable session-purpose stimulus** appropriate to each group. Identical distance does not imply identical physiological strain because pace and work duration still differ by group.
 3. **[Evidence-based]** Interval response depends on intensity, work duration/distance, cumulative work, recovery, environment, and training status. No universal optimal combination exists.
 4. **[Coaching judgment]** Exact reps, rest, pace bands, and groups are chosen for the milestone, venue, 60-minute window, and available field data.
 5. **[Evidence-based]** Acute response, chronic adaptation, and race performance are separate evidence layers.
@@ -96,6 +96,7 @@ Do not load `references.md` unless verifying or changing a claim.
 7. **[Coaching judgment]** Progression does not mean harder every Tuesday. It may mean more specificity, better control, different stimulus, deliberate unloading, or lower fatigue cost.
 8. **[Evidence-based]** Heat/environment change relative strain at a fixed pace.
 9. **[Coaching judgment]** Easy/social running is not the main Tuesday workout; easy running is used for warm-up, recovery, and cooldown.
+10. **[Coaching judgment]** For interval-format sessions, prescribe the work by **distance** and keep the repetition distance common across A/B/C/D whenever practical. Use pace, repetition count, and recovery to keep the dose appropriate.
 
 ---
 
@@ -122,11 +123,21 @@ Current milestones:
 
 ### Step D — select the work unit and dose
 
+For interval-format sessions:
+
+- choose a practical **distance-based repetition** first;
+- keep the repetition distance the same across A/B/C/D whenever practical;
+- adjust group dose primarily through pace and, when needed, repetition count;
+- treat recovery as an independent variable that may be time- or distance-based.
+
+Continuous tempo / steady / sustained continuous work may remain time-based or route-distance-based because uninterrupted duration can be part of the purpose.
+
 Explicitly answer:
 
-- Why time or distance?
+- If this is an interval-format session, what common repetition distance is being used?
 - What is the expected rep duration for every group?
-- What cumulative quality volume does every group receive?
+- What cumulative quality distance/time does every group receive?
+- Does any group need fewer repetitions to keep the dose appropriate?
 - What must recovery accomplish?
 
 ### Step E — check sequence and fatigue
@@ -253,9 +264,10 @@ The references are deliberately approximate. Small gaps or overlaps are acceptab
 
 ### Group-specific dose adjustment
 
-- **[Coaching judgment]** Group D may complete fewer repetitions when its longer repetition time, current load, or session-time requirement would otherwise create excessive total quality duration or fatigue. This option is available for both distance-based and time-based sessions when needed.
+- **[Coaching judgment]** In interval-format sessions, keep the repetition distance common across A/B/C/D whenever practical and change **repetition count before repetition distance** when one group would otherwise receive excessive total work.
+- **[Coaching judgment]** Group D may complete fewer repetitions when its longer repetition time, current load, or session-time requirement would otherwise create excessive total quality duration or fatigue.
 - **[Coaching judgment]** Group-specific repetition reductions should normally be a **Group D tool**. Keep A, B, and C on the same repetition count when practical rather than routinely creating separate A/B/C volumes.
-- **[Coaching judgment]** In distance-based sessions, use Group D repetition count and practical split targets together to keep total quality time and the workout purpose appropriate.
+- **[Coaching judgment]** A group-specific repetition distance is an exception, not a normal dose-control tool. Use it only when a common distance would materially distort the workout purpose, violate the 60-minute window, or create a safety/logistics problem, and document the reason.
 - **[Coaching judgment]** Do not add a Group E by default. If participation demand below the current D coverage becomes material in practice, reconsider the group system deliberately rather than pre-emptively adding complexity.
 
 ### Pace-setting hierarchy for the published bands
@@ -297,41 +309,40 @@ Exact values are coaching judgments. The matrix identifies the primary target an
 | Workout family | Primary target | Expected transfer | Work-unit tendency | Recovery objective | Main fatigue risk | Evidence route |
 |---|---|---|---|---|---|---|
 | Continuous tempo | uninterrupted controlled high aerobic output | sustained pace/rhythm | usually time or route distance | none | drifting above target and fading | THR-001/002 |
-| Cruise intervals | controlled threshold-oriented quality volume | sustainable speed and pace control | time or distance | short continuity-preserving recovery | becoming severe-domain intervals | THR-001/002, REC-002 |
-| Aerobic power | sustained severe-domain high oxygen-uptake work | VO2max/MAV support and faster-pace reserve | often multi-minute time; distance when duration remains appropriate | preserve work quality with incomplete/appropriate recovery | chasing maximal pace or excess volume | AP-001–004 |
-| 1-km race rhythm | distance-specific rhythm and split judgement | specificity and pacing | often distance-based | enough recovery for target rhythm | turning into repeated all-out trials | RACE-1K-001/002, IP-003 |
-| Speed endurance | maintain fast running under controlled accumulating fatigue | sustain speed late in short race | time or meaningful distance | balance quality and fatigue accumulation | mechanics collapse / excessive anaerobic load | SPD-001, RACE-1K-001 |
-| Short speed | fast mechanics and speed reserve | movement quality and speed access | short distance/time | generous recovery | confusing with exhausting SIT | SPD-001, NM-001 |
-| Hills — long | aerobic + muscular overload | high aerobic demand and force-oriented running | usually time/distance by hill | preserve repeatability; account for downhill | calf/Achilles/muscular load | HILL-001 |
+| Cruise intervals | controlled threshold-oriented quality volume | sustainable speed and pace control | distance-based repetitions | short continuity-preserving recovery | becoming severe-domain intervals | THR-001/002, REC-002 |
+| Aerobic power | sustained severe-domain high oxygen-uptake work | VO2max/MAV support and faster-pace reserve | distance-based repetitions selected with expected rep duration in mind | preserve work quality with incomplete/appropriate recovery | chasing maximal pace or excess volume | AP-001–004 |
+| 1-km race rhythm | distance-specific rhythm and split judgement | specificity and pacing | distance-based repetitions | enough recovery for target rhythm | turning into repeated all-out trials | RACE-1K-001/002, IP-003 |
+| Speed endurance | maintain fast running under controlled accumulating fatigue | sustain speed late in short race | distance-based repetitions | balance quality and fatigue accumulation | mechanics collapse / excessive anaerobic load | SPD-001, RACE-1K-001 |
+| Short speed | fast mechanics and speed reserve | movement quality and speed access | short distance-based repetitions | generous recovery | confusing with exhausting SIT | SPD-001, NM-001 |
+| Hills — long | aerobic + muscular overload | high aerobic demand and force-oriented running | fixed hill distance / segment | preserve repeatability; account for downhill | calf/Achilles/muscular load | HILL-001 |
 | Hills — short | acceleration/force/power | neuromuscular/power stimulus | short distance | walk/jog-back or generous recovery | maximal work without preparation | HILL-001, NM-001 |
 | Marathon-oriented controlled | sustainable speed and fatigue resistance | threshold/durability support | longer time/distance | short recovery or continuous | assuming Tuesday replaces long-run/volume | DUR-001–004, MAR-001/002 |
-| Sharpening | readiness and fast rhythm with low fatigue | race-day movement familiarity | short race-relevant distance/time | generous recovery | trying to create fitness days before race | TAP-001/002 |
+| Sharpening | readiness and fast rhythm with low fatigue | race-day movement familiarity | short race-relevant distance | generous recovery | trying to create fitness days before race | TAP-001/002 |
 
 ---
 
-## 9. Time-based versus distance-based work
+## 9. Distance-first rule for interval-format work
 
-There is no default unit.
+The scientific evidence does **not** establish distance-based prescription as physiologically superior to time-based prescription. This section is an Odyssey **operating rule** chosen for participant comprehension and field execution.
 
-### Prefer time-based when
+### Interval-format default
 
-- comparable work duration at target intensity is central;
-- a fixed distance would create materially different duration and distort the stimulus;
-- the target is primarily threshold duration or aerobic-power exposure;
-- common start/stop improves group execution.
+- **[Coaching judgment]** A workout made of repeated work bouts separated by recovery is prescribed by **distance**.
+- **[Coaching judgment]** This applies to cruise/threshold intervals, aerobic-power intervals, race-rhythm repetitions, speed endurance, short speed, hill repetitions, and sharpening.
+- **[Coaching judgment]** Continuous tempo, steady, or other uninterrupted sustained running is not treated as interval-format work for this rule and may remain time-based or route-distance-based.
+- **[Coaching judgment]** Recovery units are independent from work units. A distance-based repetition may use a time-based recovery, jog-back distance, standing recovery, or another recovery format that serves the next repetition.
 
-### Prefer distance-based when
+### Common distance across pace groups
 
-- race/segment specificity and split judgement matter;
-- the venue has reliable landmarks;
-- exact distance improves participant understanding;
-- differing work duration is acceptable for the target.
+- **[Coaching judgment]** Keep the **repetition distance the same across A/B/C/D whenever practical** so participants can easily understand what they are running and compare repetitions.
+- **[Coaching judgment]** Adjust the workout first through group pace and, when needed, repetition count. Group D is normally the first place to reduce repetitions when slower rep duration would otherwise create excessive total work.
+- **[Coaching judgment]** Different repetition distances between groups are an exception. Use them only when a common distance would materially distort the intended stimulus, exceed the 60-minute session window, or create a meaningful safety/venue/logistics problem.
 
-### Rules
+### Evidence boundary
 
-- Work and recovery units are independent.
-- Do not force a 50/50 mix.
-- Before finalizing, answer: **why this unit for this purpose?**
+- **[Evidence-based]** Work-bout duration remains an important dose variable, so the same distance can produce materially different acute demands across groups.
+- **[Inference]** A common distance improves operational clarity; it does not prove equal physiological stimulus.
+- **[Coaching judgment]** Therefore every interval design still checks expected rep duration, cumulative quality dose, pace decay, and recovery before approval.
 
 ---
 
@@ -503,7 +514,7 @@ For each Tuesday verify:
 2. Relevant Evidence Claim IDs?
 3. Expected transfer to running?
 4. Acute versus chronic versus performance evidence separated?
-5. Why time or distance?
+5. For interval-format work, is the repetition distance distance-based and common across groups? If not, is the exception justified? For continuous work, is time or route distance appropriate to the purpose?
 6. Expected work duration and cumulative dose for every group?
 7. Recovery purpose?
 8. Pace bands make sense for the workout purpose and broad A/B/C/D ability references rather than aspiration alone?
